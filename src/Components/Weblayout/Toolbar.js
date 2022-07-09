@@ -4,9 +4,9 @@ import "./Toolbar.css";
 const Toolbar = () => {
   return (
     <div>
-      <nav class="flex items-center justify-between flex-wrap bg-rose-700 h-11  p-6">
+      <nav class="flex items-center justify-between flex-wrap bg-rose-700 h-11  p-2">
         <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <button class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white">
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -17,33 +17,53 @@ const Toolbar = () => {
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="w-full block flex-grow lg:flex xl:ml-24 font-normal lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              class="block mt-4   lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
             >
-              Docs
+              New Arrivals
             </a>
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
             >
-              Examples
+              Gift Ideas
             </a>
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white"
             >
-              Blog
+              Personalize
             </a>
           </div>
           <div>
+            <svg
+              className="absolute w-6 text-white -ml-4 "
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
             <a
               href="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+              class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0"
             >
-              Download
+              Stores
             </a>
           </div>
         </div>
