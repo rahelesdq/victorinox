@@ -39,6 +39,36 @@ const Toolbar = () => {
             </a>
           </div>
           <div>
+            <div className=" lg:-mr-20 sm:-ml-7">
+              <svg
+                className="absolute w-6 lg:text-white lg:-ml-2 lg:mt-0 sm:mt-4 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                />
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:-mr-7 sm:ml-3"
+              >
+                Account |
+              </a>
+              <a
+                href="#"
+                class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:-ml-32"
+              >
+                Log in
+              </a>
+            </div>
+          </div>
+          <div>
             <svg
               className="absolute w-6 lg:text-white lg:-ml-4 lg:mt-0 sm:mt-4 "
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +90,7 @@ const Toolbar = () => {
             </svg>
             <a
               href="#"
-              class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 sm:ml-3"
+              class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:ml-3"
             >
               Stores
             </a>
