@@ -5,8 +5,8 @@ const Header = () => {
     <div>
       <div className="header-2 h-28 ">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
-          <div className="container px-4  md:flex md:items-center ">
-            <div className="flex justify-between items-center">
+          <div className="container px-4  md:flex md:items-center flex justify-between">
+            <div className="flex justify-between items-end space-x-32">
               <a href="#">
                 <img
                   className="ml-24 lg:w-64 "
@@ -63,9 +63,8 @@ const Header = () => {
                 Contact
               </a>
             </div>
-
             {/* search input */}
-            <div class=" lg:mb-10 lg:mr-16 ">
+            <div class="lg:mb-10 lg:mr-16 ">
               {/* md:mt-24 md:mr-24 */}
               <div class="flex bg-rose-700">
                 <input
@@ -79,7 +78,36 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="w-full bg-black">hiiii</div>
+          <div className="mt-2 w-full h-3/5 z-50 bg-white text-white absolute flex hidden dropdown ">
+            <div className="flex space-x-2">
+              <ul className="pt-10 pl-48 text-gray-900 ">
+                <li className="font-medium">Categories</li>
+                <li className="pt-10">Small Pocket Knives</li>
+                <li className="pt-4">Medium Pocket Knives</li>
+                <li className="pt-4">Large Pocket Knives</li>
+                <li className="pt-4">Pouches & Accessories</li>
+                <li className="pt-4">Outdoor</li>
+                <li className="pt-4">Garden</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="pt-10 pl-48 text-gray-900 ">
+                <li className="font-medium">Information</li>
+                <li className="pt-10">Production of the Pocketknife</li>
+                <li className="pt-4">Materials We Use</li>
+                <li className="pt-4">Wine Master</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="pt-10 pl-48 text-gray-900 ">
+                <li className="font-medium">Service</li>
+                <li className="pt-10">FAQ</li>
+                <li className="pt-4">Downloads</li>
+                <li className="pt-4">Contact</li>
+                <li className="pt-4">Pouches & Accessories</li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
