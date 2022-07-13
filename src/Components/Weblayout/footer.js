@@ -34,7 +34,7 @@ const Footer = () => {
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start ">
                 Victorinox
               </h6>
-              <p class="mb-4  sm:sr-only ">
+              <p class="mb-4 ">
                 <a href="#!" class="text  ">
                   Company
                 </a>
@@ -148,7 +148,7 @@ const Footer = () => {
               <button class="bg-rose-700 hover:bg-rose-700 text-white font-bold py-2 mb-4 border border-white w-52">
                 Subscribe
               </button>
-              <div class="mr-12 hidden lg:block mb-4 ">
+              <div class="mr-12  lg:block mb-4 ">
                 <span>Follow us:</span>
               </div>
               <div class="flex justify-left ">
