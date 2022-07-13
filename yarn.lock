@@ -7542,12 +7542,16 @@
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
 
+<<<<<<< HEAD
 "redux-burger-menu@^0.2.8":
   "integrity" "sha512-hzMPsmKF0QcMFYU/u/yC8Du0f0tZh3O88Usm1GI9h/xLTNGm248PEuCsVN6JCKHhdSTYt33d9Ir3edzHQGrqaw=="
   "resolved" "https://registry.npmjs.org/redux-burger-menu/-/redux-burger-menu-0.2.8.tgz"
   "version" "0.2.8"
 
 "redux@^4", "redux@>=3.0.0":
+=======
+"redux@^4.2.0":
+>>>>>>> 30f06a76ce6072d5215084b84edd9ca3851876cb
   "integrity" "sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.2.0.tgz"
   "version" "4.2.0"
