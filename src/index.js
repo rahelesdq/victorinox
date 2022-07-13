@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Weblayout from "./Components/Weblayout/Weblayout";
 import App from "./App";
-import Homepage from "./Components/Homepage/Homepage";
+
 import Armyknives from "./Components/Armyknives/Armyknives";
 import Cutlery from "./Components/Cutlery/Cutlery";
 import Watches from "./Components/Watches/Watches";
@@ -23,7 +23,7 @@ root.render(
       <Routes>
         <Route path="" element={<Weblayout />}>
           <Route path="/" element={<App />} />
-          <Route path="Homepage" element={<Homepage />} />
+       
           <Route path="Armyknives" element={<Armyknives />} />
           <Route path="Cutlery" element={<Cutlery />} />
           <Route path="Watches" element={<Watches />} />
