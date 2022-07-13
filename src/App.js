@@ -34,10 +34,6 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="flex justify-between px-16">
-        <div>l</div>
-        <div>r</div>
-      </div> */}
     </div>
   );
 }

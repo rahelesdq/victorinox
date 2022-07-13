@@ -63,6 +63,7 @@ const Header = () => {
                 Contact
               </a>
             </div>
+
             {/* search input */}
             <div class=" lg:mb-10 lg:mr-16 ">
               {/* md:mt-24 md:mr-24 */}
@@ -78,6 +79,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <div className="w-full bg-black">hiiii</div>
         </nav>
       </div>
     </div>
