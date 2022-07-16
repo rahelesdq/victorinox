@@ -4,7 +4,17 @@ import { AiOutlineRight } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
 const Toolbar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
-  const [SecondShow, setSecondShow] = useState(false);
+  const [secondShow, setSecondShow] = useState(false);
+
+  const handleClick = () => {
+    console.log("hey its working");
+    setSecondShow(true);
+  };
+
+  const handleHello = () => {
+    console.log("hello is workigng");
+    setSecondShow(false);
+  };
 
   return (
     <div>
@@ -111,90 +121,103 @@ const Toolbar = () => {
       </nav>
 
       <>
-        <div
-          onClick={() => setShowMenu(false)}
-          className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
-            ShowMenu ? "left-0" : "right-full"
-          }   opacity-90 transition-all`}
-        >
-          <div
-            onClick={() => setShowMenu(false)}
-            className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
-              ShowMenu ? "left-0" : "right-full"
-            }   opacity-90 transition-all`}
-          ></div>
-          <ImCross className=" ml-3 " />
-        </div>
-        <div
-          className={`bg-white fixed ${
-            ShowMenu ? "left-0" : "left-full"
-          } top-0 w-1/3 h-screen z-30 transition-all `}
-        >
-          <div class="text-sm lg:flex-grow ">
-            <button onClick={() => setSecondShow(false)}>
-              <a
-                href="#responsive-header"
-                class="block mt-6   lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
-              >
-                SWISS ARMY KNIVES
-                <AiOutlineRight className=" inline top-8  absolute right-1 text-lg " />
-              </a>
-            </button>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
-            >
-              CUTLERY
-              <AiOutlineRight className=" inline top-[73px] absolute  right-1  text-lg" />
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
-            >
-              WATCHES
-              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
-            >
-              TRAVEL GEAR
-              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
-            >
-              FRAGRANCES
-              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6"
-            >
-              STORE LOCATOR
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
-            >
-              MY VICTORINOX
-            </a>
-
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6"
-            >
-              WISH LIST
-            </a>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
-            >
-              NEW Arrivals
-            </a>
+        {secondShow ? (
+          <div className="bg-red-500" onClick={() => handleHello()}>
+            <div className=" bg-red-800 w-60 h-[200px] z-50 top-0  flex absolute ">
+              bbgb
+            </div>
           </div>
-        </div>
+        ) : (
+          <>
+            <div
+              onClick={() => setShowMenu(false)}
+              className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
+                ShowMenu ? "left-0" : "right-full"
+              }   opacity-90 transition-all`}
+            >
+              <ImCross className=" ml-3 " />
+            </div>
+            <div
+              className={`bg-white fixed ${
+                ShowMenu ? "left-0" : "left-full"
+              } top-0 w-1/3 h-screen z-30 transition-all `}
+            >
+              <div class="text-sm lg:flex-grow ">
+                <button className="bg-blue-500">
+                  <a
+                    onClick={() => handleClick()}
+                    href="#responsive-header"
+                    class="block mt-6   lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
+                  >
+                    SWISS ARMY KNIVES
+                    <AiOutlineRight className=" inline top-8  absolute right-1 text-lg left-0" />
+                  </a>
+                </button>
+                <div>
+                  {/* <div
+                    onClick={() => setSecondShow(false)}
+                    className={` ${
+                      secondShow ? "left-0" : "right-full"
+                    }   opacity-90 transition-all`}
+                  ></div> */}
+                </div>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  CUTLERY
+                  <AiOutlineRight className=" inline top-[73px] absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  WATCHES
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  TRAVEL GEAR
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
+                >
+                  FRAGRANCES
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6"
+                >
+                  STORE LOCATOR
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
+                >
+                  MY VICTORINOX
+                </a>
+
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6"
+                >
+                  WISH LIST
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
+                >
+                  NEW Arrivals
+                </a>
+              </div>
+            </div>
+          </>
+        )}
       </>
     </div>
   );
