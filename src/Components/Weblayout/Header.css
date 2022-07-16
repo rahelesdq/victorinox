@@ -1,1 +1,15 @@
-.dropdown:hover  {}
+.menu1:hover > .dropdown1{
+    display: flex;
+}
+.menu2:hover > .dropdown2{
+    display: flex;
+}
+.menu3:hover > .dropdown3{
+    display: flex;
+}
+.menu4:hover > .dropdown4{
+    display: flex;
+}
+.menu5:hover > .dropdown5{
+    display: flex;
+}
