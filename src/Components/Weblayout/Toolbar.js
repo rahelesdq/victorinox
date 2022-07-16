@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Toolbar.css";
-import { AiOutlineRight } from 'react-icons/ai';
-import { ImCross } from 'react-icons/im';
+import { AiOutlineRight } from "react-icons/ai";
+import { ImCross } from "react-icons/im";
 const Toolbar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
-  const [SecondShow, setSecondShow]=useState(false);
-  
+  const [SecondShow, setSecondShow] = useState(false);
+
   return (
     <div>
       <nav class="flex items-center justify-between flex-wrap bg-rose-700 h-11  p-2">
@@ -13,32 +13,28 @@ const Toolbar = () => {
           <button
             onClick={() => setShowMenu(true)}
             class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white"
-          >  
+          >
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title> Menu </title> 
+              <title> Menu </title>
 
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
-          </button> 
-
+          </button>
         </div>
 
-        <div class="w-full block flex-grow lg:flex xl:ml-24 font-normal lg:items-center lg:w-auto  ">
+        <div class="hidden lg:block w-full  flex-grow lg:flex xl:ml-24 font-normal lg:items-center lg:w-auto  ">
           <div class="text-sm lg:flex-grow ">
-            
-           
             <a
-            
-            href="#responsive-header"
-            class="block mt-4   lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
+              href="#responsive-header"
+              class="block mt-4   lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
             >
               New Arrivals
             </a>
-            
+
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
@@ -63,12 +59,10 @@ const Toolbar = () => {
                 stroke-width="2"
               >
                 <path
-
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"  
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
-
               </svg>
 
               <a
@@ -110,109 +104,95 @@ const Toolbar = () => {
               href="#"
               class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:ml-3"
             >
-       
-
               Stores
             </a>
           </div>
         </div>
       </nav>
-    
 
       <>
         <div
           onClick={() => setShowMenu(false)}
           className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
             ShowMenu ? "left-0" : "right-full"
-
           }   opacity-90 transition-all`}
         >
-           <div
-          onClick={() => setShowMenu(false)}
-          className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
-            ShowMenu ? "left-0" : "right-full"
-
-          }   opacity-90 transition-all`}
-        ></div>
-          <ImCross className=" ml-3 "/>
+          <div
+            onClick={() => setShowMenu(false)}
+            className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
+              ShowMenu ? "left-0" : "right-full"
+            }   opacity-90 transition-all`}
+          ></div>
+          <ImCross className=" ml-3 " />
         </div>
         <div
           className={`bg-white fixed ${
             ShowMenu ? "left-0" : "left-full"
           } top-0 w-1/3 h-screen z-30 transition-all `}
         >
-            <div class="text-sm lg:flex-grow ">
-              <button onClick={()=>setSecondShow(false)}>
-            <a
-              href="#responsive-header"
-              class="block mt-6   lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
-            >
-              SWISS ARMY KNIVES
-            <AiOutlineRight className=" inline top-8  absolute right-1 text-lg "/>
-            </a>
+          <div class="text-sm lg:flex-grow ">
+            <button onClick={() => setSecondShow(false)}>
+              <a
+                href="#responsive-header"
+                class="block mt-6   lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
+              >
+                SWISS ARMY KNIVES
+                <AiOutlineRight className=" inline top-8  absolute right-1 text-lg " />
+              </a>
             </button>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
-            
-              >
-           
+            >
               CUTLERY
-            <AiOutlineRight className=" inline top-[73px] absolute  right-1  text-lg"/>
+              <AiOutlineRight className=" inline top-[73px] absolute  right-1  text-lg" />
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
             >
-             WATCHES
-             <AiOutlineRight className=" inline absolute  right-1  text-lg"/>
+              WATCHES
+              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
             >
-           TRAVEL GEAR
-           <AiOutlineRight className=" inline absolute  right-1  text-lg"/>
+              TRAVEL GEAR
+              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
-            >  
-             FRAGRANCES
-             <AiOutlineRight className=" inline absolute  right-1  text-lg"/>
+            >
+              FRAGRANCES
+              <AiOutlineRight className=" inline absolute  right-1  text-lg" />
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6"
             >
-           STORE LOCATOR
-
+              STORE LOCATOR
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
             >
-
-            MY VICTORINOX
-            
+              MY VICTORINOX
             </a>
-            
+
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6"
             >
-
-            WISH LIST
-            
+              WISH LIST
             </a>
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 text-xs ml-6 "
             >
-           NEW Arrivals
-            
+              NEW Arrivals
             </a>
-
           </div>
         </div>
       </>
