@@ -1,0 +1,9 @@
+.imgbox { 
+    overflow: hidden; 
+  }
+  .imgbox img {
+    transition: transform .5s ease;
+  }
+  .imgbox:hover img {
+    transform: scale(1.1);
+  }
