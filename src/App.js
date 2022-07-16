@@ -7,30 +7,62 @@ import watch from "./image/download.watch.webp";
 function App() {
   return (
     <div>
-      <div className=" px-[130px] grid grid-cols-3 gap-3  ">
-        <div className="w-full h-fit col-span-full">
-          <img className="w-full h-full " src={victorinox} alt="" />
+      <div className=" md:px-[130px]  md:grid  grid-cols-3 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px] ">
+        <div className="w-full h-fit col-span-full relative md:shrink-0">
+          <img className="md:w-full md:h-full   " src={victorinox} alt="" />
+          <h1 className=" absolute md:bottom-7 m-5  text-white uppercase    ">
+           
+            BEST OF VICTORINOX AND ADIDAS{" "}
+          </h1>
+          <p className=" absolute bottom-0   text-white  font-bold  m-5 text-lg">
+            BE EQUIPPED
+          </p>
+          
         </div>
         <div className=" col-span-2">
-          <div className="w-full  ">
-            <img className="w-full   " src={girl} alt="" />
+          <div className="w-full relative ">
+            <img className="w-full  " src={girl} alt="" />
+            <h1 className="absolute bottom-[0px]   text-white uppercase   bg-rose-700 w-full h-[112px] bg-opacity-75  "></h1>
+            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg"> 
+              PART OF YOUR JOURNEY 
+            </p>
           </div>
           <div className="w-full mt-[10px] relative ">
             <img className="w-full" src={goje} alt="" />
-            <h1 className="absolute bottom-0 bg-red-500">dfhdcdhdcjhsdcjhsdcsd</h1>
+
+            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
+            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
+           
+              PART OF YOUR JOURNEY 
+            </p>
           </div>
         </div>
         <div className="col-span-1">
           <div className="w-full relative">
             <img className="w-full  " src={nife} alt="" />
-          <h1 className="absolute bottom-0 bg-red-500">dfhdcdhdcjhsdcjhsdcsd</h1>
+            <h1 className="absolute bottom-0  text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
+            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
+             
+              PART OF YOUR JOURNEY
+            </p>
           </div>
 
-          <div className="w-full  mt-[10px] ">
+          <div className="w-full relative mt-[10px] ">
             <img className="w-full " src={watch} alt="" />
+            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
+            <p className=" absolute bottom-0 text-white  font-bold  m-5 text-lg">
+           
+              PART OF YOUR JOURNEY
+            </p>
           </div>
+
           <div className="w-full relative  mt-[10px] ">
             <img className="w-full " src={watch} alt="" />
+            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
+            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
+            
+              PART OF YOUR JOURNEY
+            </p>
           </div>
         </div>
       </div>
