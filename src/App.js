@@ -4,9 +4,13 @@ import girl from "./image/download.3.jpg";
 import nife from "./image/download.webp";
 import goje from "./image/download.3.webp";
 import watch from "./image/download.watch.webp";
+import ImageSlider from "./Components/home image slider/imageSlider";
+
+
 function App() {
   return (
     <div>
+     
       <div className=" px-[130px] grid grid-cols-3 gap-3  ">
         <div className="w-full h-fit col-span-full">
           <img className="w-full h-full " src={victorinox} alt="" />
@@ -34,8 +38,12 @@ function App() {
           </div>
         </div>
       </div>
+      <ImageSlider />
+
     </div>
   );
 }
+
+
 
 export default App;

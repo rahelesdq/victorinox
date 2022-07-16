@@ -1583,6 +1583,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@splidejs/splide@^4.0.7":
+  "integrity" "sha512-aJAOGJN2lwjwou3mxQofc3uhe+RXpw9in0WfysFX7AMT/mj7wSqoetfm41s7J8jU6FJ3ZWaLYgSJIpBAQ5wyqw=="
+  "resolved" "https://registry.npmjs.org/@splidejs/splide/-/splide-4.0.7.tgz"
+  "version" "4.0.7"
+
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   "integrity" "sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ=="
   "resolved" "https://registry.npmjs.org/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.2.3.tgz"
@@ -4547,6 +4552,11 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
+"fsevents@^2.3.2", "fsevents@~2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
+
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -7429,7 +7439,7 @@
   dependencies:
     "history" "^5.2.0"
 
-"react-scripts@^5.0.1":
+"react-scripts@5.0.1":
   "integrity" "sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ=="
   "resolved" "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz"
   "version" "5.0.1"
@@ -7542,16 +7552,12 @@
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
 
-<<<<<<< HEAD
 "redux-burger-menu@^0.2.8":
   "integrity" "sha512-hzMPsmKF0QcMFYU/u/yC8Du0f0tZh3O88Usm1GI9h/xLTNGm248PEuCsVN6JCKHhdSTYt33d9Ir3edzHQGrqaw=="
   "resolved" "https://registry.npmjs.org/redux-burger-menu/-/redux-burger-menu-0.2.8.tgz"
   "version" "0.2.8"
 
-"redux@^4", "redux@>=3.0.0":
-=======
-"redux@^4.2.0":
->>>>>>> 30f06a76ce6072d5215084b84edd9ca3851876cb
+"redux@^4", "redux@^4.2.0", "redux@>=3.0.0":
   "integrity" "sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.2.0.tgz"
   "version" "4.2.0"

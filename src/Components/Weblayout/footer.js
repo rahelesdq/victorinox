@@ -1,26 +1,29 @@
 import React from "react";
 
 const Footer = () => {
+    
   return (
     <div>
-      <footer class="text-center lg:text-left bg-gray-100 text-gray-600 ">
-        <div class="justify-center items-center lg:justify-between p-6 border-gray-300 bg-white">
-          <div class="flex justify-center xl:space-x-52 sm:-space-x-56">
-            <div class=" justify-center w-16" >
+        <div>
+            
+        </div>
+      <footer class="text-center lg:text-left  text-gray-600 ">
+        <div class="justify-center items-center lg:justify-between  p-6 xl:m-20 border-gray-300 bg-white">
+          <div class="flex  justify-center grid grid-2 xl:space-x-24 md:grid-cols-2 lg:grid-cols-4">
+          <div >
               <img  src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfGltYWdlc3w2NTB8aW1hZ2UvcG5nfGltYWdlcy9oYmQvaGYxLzg4MzcwNzU4Mjg3NjYucG5nfDJmZWUxZjZjZTRiMWJhODY0N2Y5OTFlMjlhNmU0MDkxYzlkZWZkZGI2MTFlNzYwZmQ5Njk4NjQ3MTc3NjMwMmY"></img>
-              Free Returns
-            </div>
+              Free Returns</div>
             <div >
               <img  src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfGltYWdlc3w3OTV8aW1hZ2UvcG5nfGltYWdlcy9oOTYvaGVjLzg4MzcwNzU2MzIxNTgucG5nfDg4NjZkOGUzNzg1YjQ3NzlmNjk4MTY4NjliYTFlZGZhZGZmYzUyYmZjNmViZjhkNTVjYzk3MTYyOTdmYTAxODA"></img>
-              Secure Payment</div>
+              Official Shop</div>
               <div >
               <img  src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfGltYWdlc3w5MTZ8aW1hZ2UvcG5nfGgwMS9oYjMvMTM2NDcyMTI3NDA2MzgvbGt3LXVzLnBuZ3xkNjFlNTFiMjQ3MmM2MWE2M2Y1NDZjNDMxOWE5NjBkNmVkNjZiNDk5OWYzMDg2MDJlMWIxZmNkOTZkMThiMDg2"></img>
-              official shop
+              Free Shipping
             </div>
             <div >
               <img src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfGltYWdlc3wxOTIwfGltYWdlL3BuZ3xpbWFnZXMvaGIyL2hhZi84ODExOTQ3MTYzNjc4LnBuZ3xlNzIwZDk4MDlmNjQ2MDVmNjgyOWM5YmViMDhmZTEyMjM1YjU2OWEyY2UxZDYxNDYwNzBlMTMzY2Q1ZWJiNTBh"></img>
               official shop
-            </div>
+            </div> 
               
           </div>
           
@@ -28,13 +31,14 @@ const Footer = () => {
 
         {/* tike dovome footer */}
 
-        <div class="mx-3 py-10 text-center md:text-left  text-white px-2 bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat">
+        <div class="mx-0 py-10 text-center md:text-left  text-white px-2 bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat">
+            
           <div class="grid grid-1 md:grid-cols-3 lg:grid-cols-4 gap-8  ">
             <div class="">
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start ">
                 Victorinox
               </h6>
-              <p class="mb-4 ">
+              <p class="mb-4 xs:invisible ">
                 <a href="#!" class="text  ">
                   Company
                 </a>
