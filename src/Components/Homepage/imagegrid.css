@@ -1,18 +1,9 @@
-.app {
-    display: grid;
-    place-items: center;
-    height: 100vh;
+.imgbox { 
+    overflow: hidden; 
   }
-  
-  .img-container {
-    overflow: hidden;
+  .imgbox img {
+    transition: transform .5s ease;
   }
-  
-  .img-container img {
-    width: 450px;
-    transition: 0.3s;
-  }
-  
-  .img-container img:hover {
-    transform: scale(1.5);
+  .imgbox:hover img {
+    transform: scale(1.1);
   }
