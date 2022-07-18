@@ -4,9 +4,7 @@ const Footer = () => {
     
   return (
     <div>
-        <div>
-            
-        </div>
+        
       <footer class="text-center lg:text-left  text-gray-600 ">
         <div class="justify-center items-center lg:justify-between  p-6 xl:m-20 border-gray-300 bg-white">
           <div class="flex  justify-center grid grid-2 xl:space-x-24 md:grid-cols-2 lg:grid-cols-4">
@@ -33,27 +31,27 @@ const Footer = () => {
 
         <div class="mx-0 py-10 text-center md:text-left  text-white px-2 bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat">
             
-          <div class="grid grid-1 md:grid-cols-3 lg:grid-cols-4 gap-8  ">
+          <div class="grid  grid-1 md:grid-cols-3 lg:grid-cols-4 gap-8  ">
             <div class="">
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start ">
                 Victorinox
               </h6>
-              <p class="mb-4 xs:invisible ">
+              <p class="mb-4 hidden md:block ">
                 <a href="#!" class="text  ">
                   Company
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text ">
                   Welcome to victorinox
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   press
                 </a>
               </p>
-              <p>
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   visit us
                 </a>
@@ -63,27 +61,27 @@ const Footer = () => {
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start ">
                 Products
               </h6>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Pocket knives
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   kitchen knives
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Watches
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Travel gear
                 </a>
               </p>
-              <p>
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   fragrances
                 </a>
@@ -93,32 +91,32 @@ const Footer = () => {
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
                 Service
               </h6>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Product Support
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   find a store
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Contact
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   My Account
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   Corporate Gifts
                 </a>
               </p>
-              <p>
+              <p class="mb-4 hidden md:block">
                 <a href="#!" class="text">
                   returns
                 </a>

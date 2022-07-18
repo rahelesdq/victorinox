@@ -7,7 +7,7 @@ const Header = () => {
       <div className="header-2 h-28 ">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
           <div className="container px-4  md:flex md:items-center flex justify-between">
-            <div className="flex justify-between items-end space-x-32">
+            <div className=" flex justify-between items-end space-x-32">
               <a href="#">
                 <img
                   className="ml-24  lg:w-68 "
@@ -17,13 +17,10 @@ const Header = () => {
               </a>
             </div>
 
-            <div
-              class="md:hidden lg:flex   lg:mt-12 md:ml-60 md:mt-10 text-lg font-normal xl:ml-56 md:flex flex-col md:flex-row  mt-3 md:mt-0"
-              id="navbar-collapse"
-            >
-              <div class="p-2 lg:px-4 sm:mx-2 lg:w-52 md:w-44  text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 itemhover menu1">
+            <div class="bg-red hidden lg:flex   lg:mt-12 md:ml-60 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
+              <div class=" p-2 lg:px-4 sm:mx-2 lg:w-52 md:w-44  text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 itemhover menu1">
                 <a href="#">Swiss Army Knives</a>
-                <div className="mt-2 left-2 w-screen h-3/5 z-50 bg-white text-white absolute flex hidden  dropdown1 ">
+                <div className=" mt-2 left-2 w-screen h-3/5 z-50 bg-white text-white absolute flex hidden  dropdown1 ">
                   <div className="flex justify-items-center  space-x-2">
                     <ul className="pt-10 pl-32 text-gray-900 ">
                       <li className="font-medium text-base">Categories</li>

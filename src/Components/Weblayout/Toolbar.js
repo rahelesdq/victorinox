@@ -36,7 +36,7 @@ const Toolbar = () => {
           </button>
         </div>
 
-        <div class="w-full block flex-grow lg:flex xl:ml-24 font-normal lg:items-center lg:w-auto  ">
+        <div class="hidden lg:block w-full  flex-grow lg:flex xl:ml-24 font-normal lg:items-center lg:w-auto  ">
           <div class="text-sm lg:flex-grow ">
             <a
               href="#responsive-header"
@@ -197,7 +197,7 @@ const Toolbar = () => {
               } top-0 w-1/3 h-screen z-30 transition-all `}
             >
               <div class="text-sm lg:flex-grow ">
-                <button>
+                <button className="bg-blue-500">
                   <a
                     onClick={() => handleClick()}
                     href="#responsive-header"

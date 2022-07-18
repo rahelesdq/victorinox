@@ -1,5 +1,7 @@
 import "./App.css";
 import Imagegrid from "./Components/Homepage/Imagegrid";
+import ImageSlider from "./Components/home image slider/imageSlider";
+import Hello from "./Components/Homepage/Hello";
 
 function App() {
 
@@ -7,6 +9,9 @@ function App() {
 
     <div>
       <Imagegrid />
+      <ImageSlider />
+
+      <Hello />
     </div>
   );
 }
