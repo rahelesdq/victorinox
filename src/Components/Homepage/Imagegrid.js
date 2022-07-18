@@ -10,16 +10,9 @@ import './imagegrid.css';
 const Imagegrid = () => {
   return (
     <div>
-<<<<<<< HEAD
       <div className=" md:px-[130px]  md:grid  grid-cols-3 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px]  ">
         <div className="app w-full h-fit col-span-full relative md:shrink-0 ">
           <img className="img-container   md:w-full md:h-full   " src={victorinox} alt="" />
-=======
-      <div className=" md:px-[130px]  md:grid  grid-cols-3 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px] ">
-        <div className="w-full h-fit col-span-full relative md:shrink-0 imgbox">
-          <img className="md:w-full md:h-full " src={victorinox} alt="" />
-
->>>>>>> ab5a4c2f285baee862b44d5075a4f5d96ed27732
           <h1 className=" absolute md:bottom-7 m-5  text-white uppercase    ">
             BEST OF VICTORINOX AND ADIDAS{" "}
           </h1>
@@ -28,11 +21,7 @@ const Imagegrid = () => {
           </p>
         </div>
         <div className=" col-span-2 ">
-<<<<<<< HEAD
           <div className="w-full relative ">
-=======
-          <div className="w-full relative imgbox">
->>>>>>> ab5a4c2f285baee862b44d5075a4f5d96ed27732
             <img className="w-full  " src={girl} alt="" />
             <h1 className="absolute bottom-[0px]   text-white uppercase   bg-rose-700 w-full h-[112px] bg-opacity-75  "></h1>
             <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
