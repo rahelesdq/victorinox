@@ -3,7 +3,7 @@ import React from "react";
 const Hello = () => {
   return (
     <div>
-      <div className="md:px-[140px]  md:grid  grid-cols-1 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px] sm:ml-[15px]">
+      <div className="md:px-[140px]  md:grid  grid-cols-1 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px] sm:ml-[15px] xl:m-40 ">
         <h1 className="text-3xl font-semibold">Welcome to Victorinox</h1>
         <p>
           In 1884, the Swiss pioneer Karl Elsener founded his cutler’s business.

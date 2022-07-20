@@ -4,6 +4,18 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
+      <div className="flex justify-between items-center">
+        <div>
+          <img
+            className=""
+            src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+          />
+        </div>
+        <div>
+          <input className="bg-gray-200" type={"text"} />
+          <button className="border">Search</button>
+        </div>
+      </div>
       <div className="header-2 h-28 ">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
           <div className="container  md:flex md:items-center lg:justify-between flex ">

@@ -1,0 +1,34 @@
+.card-image:hover .hide-info{
+
+    display: block;
+   
+}
+
+.card-image2:hover .hide-info2{
+    display: block;
+
+
+}
+
+.card-image3:hover .hide-info3{
+    display: block;
+}
+
+.card-image4:hover .hide-info4{
+    display: block;
+}
+
+.card-image5:hover .hide-info5{
+    display: block;
+}
+.card-image6:hover .hide-info6{
+    display: block;
+}
+.card-image9:hover .hide-info9{
+    display: block;
+}
+
+/* .white-watch:hover > .card-image{
+background: url('https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WAT_241921_S1.jpg');
+
+} */
