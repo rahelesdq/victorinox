@@ -22,9 +22,9 @@ const Header = () => {
             <div className=" flex justify-between items-end space-x-32">
               <a href="#">
                 <img
-                  className="ml-24  lg:w-68 "
+                  className=" ml-24  lg:w-68 "
                   // md:w-24 md:-mt-8 ml-72
-                  src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+                  src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg"
                 />
               </a>
             </div>

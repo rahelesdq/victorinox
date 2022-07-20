@@ -29,7 +29,7 @@ const Footer = () => {
 
         {/* tike dovome footer */}
 
-        <div class="mx-0 py-10 text-center md:text-left  text-white px-2 bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat">
+        <div class="mx-0 py-10 text-center md:text-left  text-white px-2  bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat ">
             
           <div class="grid  grid-1 md:grid-cols-3 lg:grid-cols-4 gap-8  ">
             <div class="">

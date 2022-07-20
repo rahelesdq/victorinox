@@ -4,7 +4,7 @@ import girl from "../../image/download.3.jpg";
 import nife from "../../image/download.webp";
 import goje from "../../image/download.3.webp";
 import watch from "../../image/download.watch.webp";
-import './imagegrid.css';
+
 
 const Imagegrid = () => {
   return (

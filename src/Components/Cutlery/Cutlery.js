@@ -8,7 +8,7 @@ const Cutlery =()=>{
     return(
 
         <div>
-            
+            <div className="homeLabel "></div>
         </div>
     )
 
