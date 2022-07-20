@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import Carosel from "carousel-react-rcdev";
 
@@ -12,7 +11,6 @@ class ImageSlider extends Component {
             src="https://imageengine.victorinox.com/mediahub/134519/420Wx368H/TGE_611414_PO.jpg"
             alt="imagem"
             title="imagem"
-            
           ></img>
 
           <img
@@ -53,7 +51,7 @@ class ImageSlider extends Component {
           <img
             className="border-2 "
             src="https://imageengine.victorinox.com/mediahub/150332/420Wx368H/WAT_241904_S1.jpg"
-            alt="imagem" 
+            alt="imagem"
             title="imagem"
           ></img>
         </Carosel>
@@ -63,12 +61,3 @@ class ImageSlider extends Component {
 }
 
 export default ImageSlider;
-=======
-import React from "react";
-
-const imageSlider = () => {
-  return <div></div>;
-};
-
-export default imageSlider;
->>>>>>> ab5a4c2f285baee862b44d5075a4f5d96ed27732
