@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import Carosel from "carousel-react-rcdev";
 
@@ -63,12 +62,3 @@ class ImageSlider extends Component {
 }
 
 export default ImageSlider;
-=======
-import React from "react";
-
-const imageSlider = () => {
-  return <div></div>;
-};
-
-export default imageSlider;
->>>>>>> ab5a4c2f285baee862b44d5075a4f5d96ed27732

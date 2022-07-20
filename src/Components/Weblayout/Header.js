@@ -4,6 +4,18 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
+      <div className="flex justify-between items-center">
+        <div>
+          <img
+            className=""
+            src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+          />
+        </div>
+        <div>
+          <input className="bg-gray-200" type={"text"} />
+          <button className="border">Search</button>
+        </div>
+      </div>
       <div className="header-2 h-28 ">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
           <div className="container px-4  md:flex md:items-center flex justify-between">
@@ -226,8 +238,8 @@ const Header = () => {
             </div>
 
             {/* search input */}
-            <div class="lg:mb-10 lg:mr-16 ">
-              {/* md:mt-24 md:mr-24 */}
+            {/* <div class="lg:mb-10 lg:mr-16 ">
+             
               <div class="flex bg-rose-700">
                 <input
                   type="text"
@@ -238,7 +250,7 @@ const Header = () => {
                   <h3 className="text-white text-sm">SEARCH</h3>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>
