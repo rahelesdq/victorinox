@@ -18,7 +18,7 @@ const Toolbar = () => {
 
   return (
     <div>
-      <nav class="flex items-center justify-between flex-wrap bg-rose-700 h-11  p-2">
+      <nav class="flex items-center justify-between flex-wrap  bg-rose-700 h-11  p-2">
         <div class="block lg:hidden ">
           <button
             onClick={() => setShowMenu(true)}
@@ -51,6 +51,7 @@ const Toolbar = () => {
             >
               Gift Ideas
             </a>
+
             <a
               href="#responsive-header"
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white"
@@ -122,20 +123,73 @@ const Toolbar = () => {
 
       <>
         {secondShow ? (
-          <div className="bg-red-500" onClick={() => handleHello()}>
-            <div className=" bg-red-800 w-60 h-[200px] z-50 top-0  flex absolute ">
-              bbgb
+          <div
+            className=" bg-rose-700 z-20 fixed w-full h-screen  bg-opacity-90 top-0"
+            onClick={() => handleHello()}
+          >
+            <div className=" bg-white w-60 h-screen z-50 top-0  flex absolute  ">
+              <div>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  BACK
+                  <AiOutlineRight className=" inline top-[73px] absolute  right-1 text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  INFORMATION
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
+                >
+                  INSPIRATION
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
+                >
+                  SERVICE
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6"
+                >
+                  125 YEARS
+                </a>
+              </div>
             </div>
+
+            <a
+              href="#responsive-header"
+              class="block mt-4   lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4"
+            >
+              New Arrivals 
+
+              <AiOutlineRight className=" inline absolute  right-1  text-lg " />
+            </a>
+
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 lg:text-white  hover:text-white mr-4">
+              Gift Ideas
+            </a>
           </div>
         ) : (
           <>
             <div
               onClick={() => setShowMenu(false)}
               className={`w-full  h-screen bg-rose-700 z-20 fixed top-0 ${
-                ShowMenu ? "left-0" : "right-full"
-              }   opacity-90 transition-all`}
+                ShowMenu ? "left-0" : "right-full "
+              }   opacity-90 transition-all `} 
             >
-              <ImCross className=" ml-3 " />
+              <ImCross className="absolute right-2 top-2 " />
             </div>
             <div
               className={`bg-white fixed ${
@@ -166,7 +220,7 @@ const Toolbar = () => {
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
                 >
                   CUTLERY
-                  <AiOutlineRight className=" inline top-[73px] absolute  right-1  text-lg" />
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg" />
                 </a>
                 <a
                   href="#responsive-header"
