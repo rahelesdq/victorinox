@@ -5,7 +5,6 @@ import { ImCross } from "react-icons/im";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-
 const Toolbar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
   const [secondShow, setSecondShow] = useState(false);
@@ -86,17 +85,15 @@ const Toolbar = () => {
                 href="#"
                 class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:-mr-7 sm:ml-3"
               >
-                Account
+                Account |
               </a>
-    
-    
-                <a
-                  href=""
-                  class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:-ml-32"
-                >
-                  Log in
-                </a>
-               
+
+              <Link
+                to="/Login"
+                class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:-ml-32"
+              >
+                Log in
+              </Link>
             </div>
           </div>
           <div>

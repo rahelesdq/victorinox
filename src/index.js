@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Weblayout from "./Components/Weblayout/Weblayout";
 import App from "./App";
-
+import Login from "./Components/Login/Login";
 import Armyknives from "./Components/Armyknives/Armyknives";
 import Cutlery from "./Components/Cutlery/Cutlery";
 import Watches from "./Components/Watches/Watches";
@@ -16,7 +16,7 @@ import Myreviews from "./Components/Dashboard/Myreviews";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// import Login from "./Components/login/login";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -24,20 +24,18 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="" element={<Weblayout />} >
+        <Route path="" element={<Weblayout />}>
           <Route path="/" element={<App />} />
-       
+          <Route path="Login" element={<Login />} />
           <Route path="Armyknives" element={<Armyknives />} />
           <Route path="Cutlery" element={<Cutlery />} />
           <Route path="Watches" element={<Watches />} />
           <Route path="Travelgear" element={<Travelgear />} />
           <Route path="Fragrances" element={<Fragrances />} />
           <Route path="Dashboard/" element={<Dashboard />}>
-          <Route path="Myprofile" element={<Myprofile />} />
-          <Route path="Myproducts" element={<Myproducts />} />
-          <Route path="Myreviews" element={<Myreviews />} />
-
-
+            <Route path="Myprofile" element={<Myprofile />} />
+            <Route path="Myproducts" element={<Myproducts />} />
+            <Route path="Myreviews" element={<Myreviews />} />
           </Route>
         </Route>
       </Routes>

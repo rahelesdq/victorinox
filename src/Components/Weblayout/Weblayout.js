@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./footer";
 import { Outlet, Link } from "react-router-dom";
 import "../Weblayout/Weblayout.css";
+import Footerservic from "./Footerservic";
 
 const Weblayout = () => {
   return (
@@ -11,6 +12,8 @@ const Weblayout = () => {
       <Toolbar />
       <Header />
       <Outlet />
+      
+      <Footerservic />
       <Footer />
     </div>
   );
