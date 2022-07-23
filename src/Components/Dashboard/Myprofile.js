@@ -1,20 +1,7 @@
-import React from "react"
+import React from "react";
 
-
-
-
-
-const Myprofile =()=>{
-
-
-return(
-    <div>
-
-
-    </div>
-)
-
-
-}
+const Myprofile = () => {
+  return <div></div>;
+};
 
 export default Myprofile;
