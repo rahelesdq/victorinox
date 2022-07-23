@@ -5,13 +5,16 @@ import nife from "../../image/download.webp";
 import goje from "../../image/download.3.webp";
 import watch from "../../image/download.watch.webp";
 
-
 const Imagegrid = () => {
   return (
     <div>
       <div className=" md:px-[130px]  md:grid  grid-cols-3 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px]  ">
         <div className="app w-full h-fit col-span-full relative md:shrink-0 imgbox cursor-auto">
-          <img className="img-container   md:w-full md:h-full   " src={victorinox} alt="" />
+          <img
+            className="img-container   md:w-full md:h-full   "
+            src={victorinox}
+            alt=""
+          />
           <h1 className=" absolute md:bottom-7 m-5  text-white uppercase    ">
             BEST OF VICTORINOX AND ADIDAS
           </h1>

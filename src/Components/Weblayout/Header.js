@@ -48,6 +48,17 @@ const Header = () => {
               </div> */}
 
             <div class="bg-red hidden lg:flex   lg:mt-12 md:ml-60 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
+          <div className="container  md:flex md:items-center lg:justify-between flex ">
+            <div className=" flex justify-between items-end space-x-32">
+              <a href="#">
+                <img
+                  className="lg:ml-24  lg:w-68 md:w-24 lg:block md:-mt-8 md:ml-72 "
+                  src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+                />
+              </a>
+            </div>
+
+            <div class="bg-red hidden lg:flex   lg:mt-12 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
               <div class=" p-2 lg:px-4 sm:mx-2 lg:w-52 md:w-44  text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 itemhover menu1">
                 <a href="#">Swiss Army Knives</a>
                 <div className=" mt-2 left-2 w-screen h-3/5 z-50 bg-white text-white absolute flex hidden  dropdown1 ">
@@ -259,9 +270,18 @@ const Header = () => {
             </div>
 
             <div class="lg:mb-10 lg:mr-16 "></div>
+            {/* search input */}
+            <div>
+              {/* md:mt-24 md:mr-24 */}
+              <div class="flex bg-rose-700 lg:mb-10 lg:mr-16 lg:w-80 sm:w-80  sm:mb-18 ">
+                
+              </div>
+            </div>
           </div>
-        </nav>
       </div>
+    </div>
+        </nav>
+    </div>
     </div>
   );
 };

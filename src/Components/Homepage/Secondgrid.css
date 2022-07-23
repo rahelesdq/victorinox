@@ -1,0 +1,7 @@
+.imgbox { 
+    overflow: hidden; 
+  }
+  
+  .imgbox:hover img {
+    transform: none;
+  }
