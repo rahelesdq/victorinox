@@ -28,6 +28,7 @@ const Header = () => {
           <div className="container px-4  md:flex md:items-center flex justify-between">
             <div className=" flex justify-between items-end space-x-32 ">
               <a href="#">
+                 
                 {/* <img 
                   className=" ml-24 lg:w-68"
                   // md:w-24 md:-mt-8 ml-72
