@@ -1,19 +1,22 @@
 import React from "react";
 import Footerservic from "./Footerservic";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-    
+  const { pathname } = useLocation();
+
+  console.log("pathname : ", pathname);
+
   return (
     <div>
-      <Footerservic showServic={true}/>
-        
-      <footer class="text-center lg:text-left  text-gray-600 ">
-      
+      <Footerservic
+        showServic={!pathname.toLowerCase().includes("dashboard")}
+      />
 
+      <footer class="text-center lg:text-left  text-gray-600 ">
         {/* tike dovome footer */}
 
         <div class="mx-0 py-10 text-center md:text-left  text-white px-2 xl:h-12.5  bg-[url('https://assets.victorinox.com/_ui/static/media/vx_footer_bckg.png')] bg-no-repeat ">
-            
           <div class="grid  grid-1 md:grid-cols-3 lg:grid-cols-4 gap-8  ">
             <div class="">
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start ">

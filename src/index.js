@@ -16,9 +16,6 @@ import Myreviews from "./Components/Dashboard/Myreviews";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -32,11 +29,10 @@ root.render(
           <Route path="Watches" element={<Watches />} />
           <Route path="Travelgear" element={<Travelgear />} />
           <Route path="Fragrances" element={<Fragrances />} />
-          <Route path="Dashboard/" element={<Dashboard />}>
-            <Route path="Myprofile" element={<Myprofile />} />
-            <Route path="Myproducts" element={<Myproducts />} />
-            <Route path="Myreviews" element={<Myreviews />} />
-          </Route>
+          <Route path="Dashboard" element={<Dashboard />}></Route>
+          <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
+          <Route path="/Dashboard/Myproducts" element={<Myproducts />} />
+          <Route path="/Dashboard/Myreviews" element={<Myreviews />} />
         </Route>
       </Routes>
     </BrowserRouter>
