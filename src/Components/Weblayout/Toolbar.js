@@ -3,6 +3,8 @@ import "./Toolbar.css";
 import { AiOutlineRight } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
 import { IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
+
 
 const Toolbar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
@@ -27,7 +29,6 @@ const Toolbar = () => {
             onClick={() => setShowMenu(true)}
             class="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white md:grid sm:grid "
           >
-
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -47,7 +48,6 @@ const Toolbar = () => {
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4 "
             >
               New Arrivals
-
             </a>
 
             <a
@@ -55,7 +55,6 @@ const Toolbar = () => {
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white mr-4 "
             >
               Gift Ideas
-
             </a>
 
             <a
@@ -63,9 +62,7 @@ const Toolbar = () => {
               class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-white "
             >
               Personalize
-
             </a>
-
           </div>
 
           <div>
@@ -91,13 +88,15 @@ const Toolbar = () => {
               >
                 Account
               </a>
-
-              <a
-                href="#"
-                class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:-ml-32"
-              >
-                Log in
-              </a>
+    
+    
+                <a
+                  href=""
+                  class="inline-block text-sm px-4 py-2 leading-none  lg:text-white border-white hover:border-transparent mr-24 mt-4 lg:mt-0 lg:ml-0 sm:-ml-32"
+                >
+                  Log in
+                </a>
+               
             </div>
           </div>
           <div>
@@ -126,7 +125,6 @@ const Toolbar = () => {
             >
               Stores
             </a>
-
           </div>
         </div>
       </nav>
@@ -136,7 +134,7 @@ const Toolbar = () => {
           <div
             className=" bg-rose-700 z-20 fixed w-full h-screen  bg-opacity-90 top-0"
             onClick={() => ShowSidebar()}
-            >
+          >
             <div className=" bg-white w-60 h-screen z-50 top-0  flex absolute  sm:grid ">
               <div>
                 <a
@@ -151,7 +149,6 @@ const Toolbar = () => {
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg font-bold"
                 >
-
                   SWISS ARMY KNIVES
                 </a>
 
@@ -159,7 +156,6 @@ const Toolbar = () => {
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
                 >
-
                   CATEGORY
                   <AiOutlineRight className=" inline absolute  right-1  text-lg" />
                 </a>
@@ -168,8 +164,7 @@ const Toolbar = () => {
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
                 >
-
-                  INFORMATION 
+                  INFORMATION
                   <AiOutlineRight className=" inline absolute  right-1  text-lg" />
                 </a>
 
@@ -195,18 +190,13 @@ const Toolbar = () => {
                 >
                   125 YEARS
                 </a>
-
               </div>
-
             </div>
             <a
-
               href="#responsive-header"
               className="block   lg:inline-block lg:mt-0 lg:text-white hover:text-white "
             >
-
-              New Arrivals 
-
+              New Arrivals
             </a>
 
             <a
@@ -215,44 +205,32 @@ const Toolbar = () => {
             >
               Gift Ideas
             </a>
-
           </div>
-
         ) : (
           <>
             <div
               onClick={() => setShowMenu(false)}
-
               className={` bg-rose-700 z-20 fixed w-full h-screen  bg-opacity-90 top-0 sm:fixed md:fixed  ${
-
                 ShowMenu ? "left-0" : "right-full "
               }   opacity-90 transition-all `}
             >
-
               <ImCross className="absolute right-2 top-2  text-white " />
-                 
-      
             </div>
             <div
               className={`bg-white fixed  sm:fixed  ${
                 ShowMenu ? "left-0" : "left-full"
               } top-0 w-[250px] h-screen z-30 transition-all  `}
             >
-              
               <div class="absolute ">
-                <button >
-
+                <button>
                   <a
                     onClick={() => handleClick()}
-
                     href="#responsive-header"
                     class="block mt-[30px] lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-[25px]"
                   >
-
                     SWISS ARMY KNIVES
                     <AiOutlineRight className=" inline   absolute  text-lg mt-[5px]  " />
                   </a>
-
                 </button>
 
                 <a
@@ -267,7 +245,6 @@ const Toolbar = () => {
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
                 >
-
                   WATCHES
                   <AiOutlineRight className=" inline absolute  right-1  text-lg mt-[6px]" />
                 </a>
@@ -276,30 +253,25 @@ const Toolbar = () => {
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
                 >
-
                   TRAVEL GEAR
-                  <AiOutlineRight className="inline absolute  right-1  text-lg mt-[7px]"/>
+                  <AiOutlineRight className="inline absolute  right-1  text-lg mt-[7px]" />
                 </a>
 
                 <a
                   href="#responsive-header "
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
-                > 
-
+                >
                   FRAGRANCES
-                  <AiOutlineRight className=" inline absolute  right-1  text-lg mt-[8px]"/>
+                  <AiOutlineRight className=" inline absolute  right-1  text-lg mt-[8px]" />
                 </a>
-
 
                 <a
                   href="#responsive-header"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg"
                 >
-
                   VICTORINOX
-                  <AiOutlineRight className="inline absolute    text-lg mt-[9px]  mr-[10px]"/>
+                  <AiOutlineRight className="inline absolute    text-lg mt-[9px]  mr-[10px]" />
                 </a>
-
               </div>
             </div>
           </>

@@ -8,7 +8,7 @@ import victorinox from "../../image/download.web1.webp";
 class Watches extends Component {
   render() {
     return (
-      <div>
+      <div className="" >
         <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
           <a className="  ml-4 " href="/">
             home

@@ -16,6 +16,9 @@ import Myreviews from "./Components/Dashboard/Myreviews";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// import Login from "./Components/login/login";
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -33,6 +36,8 @@ root.render(
           <Route path="Myprofile" element={<Myprofile />} />
           <Route path="Myproducts" element={<Myproducts />} />
           <Route path="Myreviews" element={<Myreviews />} />
+
+
           </Route>
         </Route>
       </Routes>
