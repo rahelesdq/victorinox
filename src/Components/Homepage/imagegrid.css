@@ -1,5 +1,6 @@
 .imgbox { 
-    overflow: hidden; 
+    overflow: hidden;
+    cursor: pointer; 
   }
   .imgbox img {
     transition: transform .5s ease;

@@ -7,8 +7,7 @@ import Carosel from "carousel-react-rcdev";
 class Cards extends Component {
   render() {
     return (
-      <Carousel>
-        <div className="body flex xl:space-x-3 sm:space-x-4 font-bold">
+        <div className="body flex xl:space-x-3 sm:space-x-4 font-bold overflow-x-auto">
           <div className="card1 -300 xl:border-2">
             <div className="card-image	">
               <img
@@ -92,6 +91,7 @@ class Cards extends Component {
           </div>
           <div className="card2 xl:border-2 	">
             <div className="card-image5 	">
+
               <img
                 className="imageCard xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/137636/420Wx368H/WAT_241927-1_S1.jpg"
@@ -142,12 +142,14 @@ class Cards extends Component {
                 src="https://imageengine.victorinox.com/mediahub/34170/420Wx368H/SAK_3_9050_22__S1.jpg"
               />
 
+
               <div className="hide-info6 hidden 	">
                 <button className=" duration-300 w-full bg-rose-700 hover:bg-gray-900 text-white font-bold py-2 px-4 border  ">
-                  Add to cart
+                  Add to cart 
                 </button>
                 {/* rangbandi */}
               </div>
+              
             </div>
             <div className="info6 	">
               <span>Flora Knife</span>
@@ -181,7 +183,6 @@ class Cards extends Component {
             </div>
           </div>
         </div>
-      </Carousel>
     );
   }
 }
