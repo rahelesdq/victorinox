@@ -4,20 +4,34 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
+      <div className="flex justify-between items-center">
+        <div>
+          <img
+            className=""
+            src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+          />
+        </div>
+        <div>
+          <input className="bg-gray-200" type={"text"} />
+          <button className="border">Search</button>
+        </div>
+      </div>
       <div className="header-2 h-28 ">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
-          <div className="container px-4  md:flex md:items-center flex justify-between">
+          <div className="container  md:flex md:items-center lg:justify-between flex ">
             <div className=" flex justify-between items-end space-x-32">
               <a href="#">
                 <img
                   className="victorinox-icon ml-24  lg:w-68 "
                   // md:w-24 md:-mt-8 ml-72
                   src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg"
+                  className="lg:ml-24  lg:w-68 md:w-24 lg:block md:-mt-8 md:ml-72 "
+                  src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
                 />
               </a>
             </div>
 
-            <div class="bg-red hidden lg:flex   lg:mt-12 md:ml-60 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
+            <div class="bg-red hidden lg:flex   lg:mt-12 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
               <div class=" p-2 lg:px-4 sm:mx-2 lg:w-52 md:w-44  text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 itemhover menu1">
                 <a href="#">Swiss Army Knives</a>
                 <div className=" mt-2 left-2 w-screen h-3/5 z-50 bg-white text-white absolute flex hidden  dropdown1 ">
@@ -226,9 +240,9 @@ const Header = () => {
             </div>
 
             {/* search input */}
-            <div class="lg:mb-10 lg:mr-16 ">
+            <div>
               {/* md:mt-24 md:mr-24 */}
-              <div class="flex bg-rose-700">
+              <div class="flex bg-rose-700 lg:mb-10 lg:mr-16 lg:w-80 sm:w-80  sm:mb-18 ">
                 <input
                   type="text"
                   class="px-2 bg-gray-300 py-2 w-80"
