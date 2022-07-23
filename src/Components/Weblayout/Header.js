@@ -4,30 +4,48 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="flex justify-between items-center">
+      <div className="sm:flex justify-between items-center block">
         <div>
           <img
-            className=""
+            className=" mt-[20px] ml-[10px] "
             src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
           />
         </div>
-        <div>
-          <input className="bg-gray-200" type={"text"} />
-          <button className="border">Search</button>
+        <div class="flex bg-rose-700 mr-[10px]">
+          <input
+            className="h-[40px] px-2 bg-gray-300 py-2 w-80 "
+            type="text"
+            placeholder="Search..."
+          />
+
+          <button className="h-[40px] text-white text-sm px-2 py-1">
+            SEARCH{" "}
+          </button>
         </div>
       </div>
-      <div className="header-2 h-28 ">
+      <div className="header-2 h-28">
         <nav className="bg-white py-2 md:py-4 border-solid border-gray-300 border-b">
           <div className="container px-4  md:flex md:items-center flex justify-between">
-            <div className=" flex justify-between items-end space-x-32">
+            <div className=" flex justify-between items-end space-x-32 ">
               <a href="#">
-                <img
-                  className=" ml-24  lg:w-68 "
+                {/* <img 
+                  className=" ml-24 lg:w-68"
                   // md:w-24 md:-mt-8 ml-72
                   src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg"
-                />
+                /> */}
               </a>
             </div>
+
+            {/* <div class="flex bg-rose-700">
+                <input
+                  type="text"
+                  class="px-2 bg-gray-300 py-2 w-80"
+                  placeholder="Search..."
+                />
+                <button class="flex items-center justify-center px-4 border-l">
+                  <h3 className="text-white text-sm"> SEARCH </h3>
+                </button>
+              </div> */}
 
             <div class="bg-red hidden lg:flex   lg:mt-12 md:ml-60 md:mt-10 text-lg font-normal xl:ml-56  flex-col lg:flex-row  mt-3 md:mt-2">
               <div class=" p-2 lg:px-4 sm:mx-2 lg:w-52 md:w-44  text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 itemhover menu1">
@@ -44,6 +62,7 @@ const Header = () => {
                       <li className="pt-4 text-sm">Garden</li>
                     </ul>
                   </div>
+
                   <div className="justify-items-center justify-center justify-items-center">
                     <ul className="pt-10 pl-48 text-gray-900 ">
                       <li className="font-medium">Information</li>
@@ -54,6 +73,7 @@ const Header = () => {
                       <li className="pt-4 text-sm">Wine Master</li>
                     </ul>
                   </div>
+
                   <div className="justify-items-center flex">
                     <ul className="pt-10 pl-48 text-gray-900 ">
                       <li className="font-medium ">Service</li>
@@ -72,15 +92,16 @@ const Header = () => {
                   <div className="flex space-x-2">
                     <ul className="pt-10 pl-32 text-gray-900 ">
                       <li className="font-medium text-base">Categories</li>
-                      <li className="pt-10 text-sm">Chef's Knives</li>
+                      <li className="pt-10 text-sm"> Chef's Knives</li>
                       <li className="pt-4 text-sm">Steak Knives</li>
                       <li className="pt-4 text-sm">Paring Knives</li>
-                      <li className="pt-4 text-sm">Bread Knives</li>
-                      <li className="pt-4 text-sm">Storage & Sets</li>
+                      <li className="pt-4 text-sm"> Bread Knives</li>
+                      <li className="pt-4 text-sm"> Storage & Sets </li>
                       <li className="pt-4 text-sm">Kitchen Utensils</li>
                       <li className="pt-4 text-sm">Tableware</li>
                     </ul>
                   </div>
+
                   <div>
                     <ul className="pt-10 pl-28 text-gray-900 ">
                       <li className="font-medium text-base">Information</li>
@@ -237,20 +258,7 @@ const Header = () => {
               </div>
             </div>
 
-            {/* search input */}
-            {/* <div class="lg:mb-10 lg:mr-16 ">
-             
-              <div class="flex bg-rose-700">
-                <input
-                  type="text"
-                  class="px-2 bg-gray-300 py-2 w-80"
-                  placeholder="Search..."
-                />
-                <button class="flex items-center justify-center px-4 border-l">
-                  <h3 className="text-white text-sm">SEARCH</h3>
-                </button>
-              </div>
-            </div> */}
+            <div class="lg:mb-10 lg:mr-16 "></div>
           </div>
         </nav>
       </div>

@@ -21,7 +21,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="" element={<Weblayout />}>
+        <Route path="" element={<Weblayout />} >
           <Route path="/" element={<App />} />
        
           <Route path="Armyknives" element={<Armyknives />} />
@@ -30,9 +30,9 @@ root.render(
           <Route path="Travelgear" element={<Travelgear />} />
           <Route path="Fragrances" element={<Fragrances />} />
           <Route path="Dashboard/" element={<Dashboard />}>
-            <Route path="Myprofile" element={<Myprofile />} />
-            <Route path="Myproducts" element={<Myproducts />} />
-            <Route path="Myreviews" element={<Myreviews />} />
+          <Route path="Myprofile" element={<Myprofile />} />
+          <Route path="Myproducts" element={<Myproducts />} />
+          <Route path="Myreviews" element={<Myreviews />} />
           </Route>
         </Route>
       </Routes>
