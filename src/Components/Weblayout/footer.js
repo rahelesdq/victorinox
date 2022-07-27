@@ -110,36 +110,36 @@ const Footer = () => {
             </div>
 
             <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start hidden xl:block   ">
                 Subscribe to our newsletter
               </h6>
 
-              {/* <p class="flex items-center justify-center md:justify-start mb-4"> */}
+              {/* <p class="flex items-center justify-center md:justify-start mb-4"></p> */}
               <input
-                class="shadow appearance-none border rounded-sm mb-4 flex md:w-2/3 justify-center md:justify-start px-2"
+                class="shadow appearance-none border rounded-sm mb-4 flex md:w-2/3 justify-center md:justify-start px-2  hidden xl:block"
                 id="name"
                 type="text"
                 placeholder="First Name"
               />
               <input
-                class="shadow appearance-none border rounded-sm mb-4 flex md:w-2/3 justify-center  md:justify-center px-2 "
+                class="shadow appearance-none border rounded-sm mb-4 flex md:w-2/3 justify-center  md:justify-center px-2 hidden xl:block"
                 id="family"
                 type="text"
                 placeholder="Last Name"
               />
               <input
-                class="shadow  border rounded-sm mb-4 flex md:w-2/3 justify-center md:justify-center px-2"
+                class="shadow  border rounded-sm mb-4 flex md:w-2/3 justify-center md:justify-center px-2 hidden xl:block"
                 id="email"
                 type="email"
                 placeholder="Email Address"
               />
-              <button class="bg-rose-700 hover:bg-rose-700 text-white font-bold py-2 mb-4 border border-white w-52">
+              <button class="bg-rose-700 hover:bg-rose-700 text-white font-bold py-2 mb-4 border border-white w-52 hidden xl:block">
                 Subscribe
               </button>
-              <div class="mr-12  lg:block mb-4 ">
+              <div class="mr-12  lg:block mb-4 xl:mt-[30px] sm:mt-[-34px] ">
                 <span>Follow us:</span>
               </div>
-              <div class="flex justify-left ">
+              <div class="flex justify-center ">
                 <a href="#!" class="mr-6 text-gray-600">
                   <svg
                     aria-hidden="true"

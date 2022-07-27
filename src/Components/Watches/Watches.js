@@ -17,7 +17,7 @@ class Watches extends Component {
           <a className=" font-bold text-rose-700 ">watches</a>
         </div>
         <div className="xl:mt-9 xl:ml-28">
-          <h1 className="xl:text-3xl font-bold ">Victorinox Watches</h1>
+          <h1 className="xl:text-3xl font-bold sm:mt-[150px] ">Victorinox Watches</h1>
         </div>
 
         <div className="victorinox-text  flex 5  ">
