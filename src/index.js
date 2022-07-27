@@ -30,6 +30,7 @@ root.render(
           <Route path="Travelgear" element={<Travelgear />} />
           <Route path="Fragrances" element={<Fragrances />} />
           <Route path="Dashboard" element={<Dashboard />}></Route>
+          
           <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
           <Route path="/Dashboard/Myproducts" element={<Myproducts />} />
           <Route path="/Dashboard/Myreviews" element={<Myreviews />} />
