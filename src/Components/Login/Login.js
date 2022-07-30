@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -6,7 +7,7 @@ const Login = () => {
       <br />
       <br />
       <div class="">
-      <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
+        <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
           <a className="  ml-4 " href="/">
             home
           </a>
@@ -47,15 +48,22 @@ const Login = () => {
             Login
           </button>
         </div>
-        <br/>
-        
-          <span class="xl:ml-[630px] md:ml-[310px] sm:ml-[180px]  text-red-700">forgote password???</span><br/>
-          <div class=" flex space-x-3   ">
-            <span class="xl:ml-[630px] md:ml-[310px] sm:ml-[180px]">No Account?</span>
-            <span class="text-red-700 hover:text-black cursor-pointer  ">Register Now!</span>
-          </div>
-        
-        
+        <br />
+
+        <span class="xl:ml-[630px] md:ml-[310px] sm:ml-[180px]  text-red-700">
+          forgote password???
+        </span>
+        <br />
+        <div class=" flex space-x-3   ">
+          <span class="xl:ml-[630px] md:ml-[310px] sm:ml-[180px]">
+            No Account?
+          </span>
+          <Link to="../Register">
+            <span class="text-red-700 hover:text-black cursor-pointer  ">
+              Register Now!
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );

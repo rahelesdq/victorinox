@@ -22,7 +22,7 @@ const Hello = () => {
         </p>
         <button
           type="button"
-          class="text-white bg-rose-700 hover:bg-black uppercase lg:w-1/5 focus:ring-4 focus:outline-none focus:ring-black font-medium text-base px-6 py-3.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black-800 md:w-1/3 "
+          class="text-white bg-rose-700 hover:bg-black uppercase lg:w-1/7 focus:ring-4 focus:outline-none focus:ring-black lg:font-medium lg:text-lg sm:text-sm  px-6 py-3.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black-800 md:w-1/3 "
         >
           The Welcome Letter
         </button>

@@ -4,6 +4,7 @@ import "./index.css";
 import Weblayout from "./Components/Weblayout/Weblayout";
 import App from "./App";
 import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
 import Armyknives from "./Components/Armyknives/Armyknives";
 import Cutlery from "./Components/Cutlery/Cutlery";
 import Watches from "./Components/Watches/Watches";
@@ -24,13 +25,14 @@ root.render(
         <Route path="" element={<Weblayout />}>
           <Route path="/" element={<App />} />
           <Route path="Login" element={<Login />} />
+          <Route path="Register" element={<Register />} />
           <Route path="Armyknives" element={<Armyknives />} />
           <Route path="Cutlery" element={<Cutlery />} />
           <Route path="Watches" element={<Watches />} />
           <Route path="Travelgear" element={<Travelgear />} />
           <Route path="Fragrances" element={<Fragrances />} />
           <Route path="Dashboard" element={<Dashboard />}></Route>
-          
+
           <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
           <Route path="/Dashboard/Myproducts" element={<Myproducts />} />
           <Route path="/Dashboard/Myreviews" element={<Myreviews />} />

@@ -46,16 +46,16 @@ const Myprofile = () => {
           ></input>
           <labe>Ms./Mrs.</labe>
         </div>
-        <div className="flex  text-2xl mt-[50px]">
+        <div className="flex  text-xl mt-[50px]">
           <span>FirstName*</span>
           <input
             value={firstname}
             onChange={(e) => SetFirstname(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[325px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 ml-[290px] pl-2 h-[40px]	"
             type="text"
           ></input>
         </div>
-        <div className="flex  text-2xl mt-[50px]">
+        <div className="flex  text-xl mt-[50px]">
           <span>Surname*</span>
           <input
             value={Surname}
@@ -69,7 +69,7 @@ const Myprofile = () => {
           <input
             value={Nickname}
             onChange={(e) => SetNickname(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[287px] pl-2 h-[40px]		"
+            class="sm:w-full border-gray-400 border-2 ml-[300px] pl-2 h-[40px]		"
             type="text"
           ></input>
         </div>
