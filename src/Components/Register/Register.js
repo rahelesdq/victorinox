@@ -22,17 +22,17 @@ const Myprofile = () => {
       {/* <div className="w-16"></div> */}
       <div className="mt-[100px]  mb-[300px] w-full mx-28">
         <div
-          className="flex  text-xl mt-[100px]"
+          className="lg:flex sm:block block text-xl mt-[100px]"
           onChange={(e) => SetTitle(e.target.value)}
         >
           {console.log(title, "lalala")}
-          <span className="cursor-pointer">title*</span>
+          <span className="cursor-pointer sm:block lg:flex block">title*</span>
           <input
             id="bordered-radio-1"
             type="radio"
             value="Mr"
             name="bordered-radio"
-            class=" w-7 xl:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            class=" w-7 xl:ml-[350px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           ></input>
           <labe>Mr</labe>
           <input
@@ -40,12 +40,14 @@ const Myprofile = () => {
             type="radio"
             value="Ms./Mrs."
             name="bordered-radio"
-            class="   w-7 xl:ml-[450px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            class="   w-7 xl:ml-[450px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           ></input>
           <labe>Ms./Mrs.</labe>
         </div>
-        <div className="flex  text-xl mt-[35px]">
-          <span className="cursor-pointer">FirstName*</span>
+        <div className="lg:flex sm:block block  text-xl mt-[35px]">
+          <span className="cursor-pointer sm:block lg:flex block ">
+            FirstName*
+          </span>
           <input
             value={firstname}
             onChange={(e) => SetFirstname(e.target.value)}

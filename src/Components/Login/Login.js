@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [Email, SetEmail] = useState();
+  const [Pass, SetPass] = useState();
+
   return (
     <div>
       <br />
@@ -22,12 +25,15 @@ const Login = () => {
             E-Mail
           </label>
           <input
-            class="  border  border-black   py-4 px-20 "
+            value={Email}
+            onChange={(e) => SetEmail(e.target.value)}
+            class="  border border-black py-4 px-20 "
             id="Email"
-            type="text"
+            type="email"
             placeholder="Email"
           ></input>
         </div>
+        {console.log(Email)}
         <br />
         <div class="text-center">
           <label
@@ -37,6 +43,8 @@ const Login = () => {
             Password
           </label>
           <input
+            value={Pass}
+            onChange={(e) => SetPass(e.target.value)}
             class=" border border-black py-4 px-20 "
             id="password"
             type="password"

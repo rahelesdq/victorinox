@@ -15,30 +15,33 @@ import Myprofile from "./Components/Dashboard/Myprofile";
 import Myproducts from "./Components/Dashboard/Myproducts";
 import Myreviews from "./Components/Dashboard/Myreviews";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="" element={<Weblayout />}>
-          <Route path="/" element={<App />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="Register" element={<Register />} />
-          <Route path="Armyknives" element={<Armyknives />} />
-          <Route path="Cutlery" element={<Cutlery />} />
-          <Route path="Watches" element={<Watches />} />
-          <Route path="Travelgear" element={<Travelgear />} />
-          <Route path="Fragrances" element={<Fragrances />} />
-          <Route path="Dashboard" element={<Dashboard />}></Route>
+    <Provider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<Weblayout />}>
+            <Route path="/" element={<App />} />
+            <Route path="Login" element={<Login />} />
+            <Route path="Register" element={<Register />} />
+            <Route path="Armyknives" element={<Armyknives />} />
+            <Route path="Cutlery" element={<Cutlery />} />
+            <Route path="Watches" element={<Watches />} />
+            <Route path="Travelgear" element={<Travelgear />} />
+            <Route path="Fragrances" element={<Fragrances />} />
+            <Route path="Dashboard" element={<Dashboard />}></Route>
 
-          <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
-          <Route path="/Dashboard/Myproducts" element={<Myproducts />} />
-          <Route path="/Dashboard/Myreviews" element={<Myreviews />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
+            <Route path="/Dashboard/Myproducts" element={<Myproducts />} />
+            <Route path="/Dashboard/Myreviews" element={<Myreviews />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
