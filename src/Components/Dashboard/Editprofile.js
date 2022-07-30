@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Editprofile = () => {
   return (
-    <div className="flex ">
+    <div className="flex">
       <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2 h-[25px] w-[270px] ">
         <a className="  ml-4 " href="/">
           home
