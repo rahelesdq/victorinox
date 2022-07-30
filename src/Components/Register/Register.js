@@ -139,7 +139,7 @@ const Myprofile = () => {
           <DatePicker
             className="ml-[315px] border-2"
             selected={startDate}
-            onChange={(date: Date) => setStartDate(date)}
+            onChange={(date) => setStartDate(date)}
           />
           {console.log(startDate, "tabalod")}
         </div>

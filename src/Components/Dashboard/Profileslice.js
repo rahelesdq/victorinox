@@ -22,6 +22,6 @@ export const Profileslice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { addForm } = listSlice.actions;
+export const { addForm } = Profileslice.actions;
 
 export default Profileslice.reducer;

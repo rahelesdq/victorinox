@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import formreducer from "./Profileslice";
+import formreducer from "./Components/Dashboard/Profileslice";
 
 export default configureStore({
   reducer: {

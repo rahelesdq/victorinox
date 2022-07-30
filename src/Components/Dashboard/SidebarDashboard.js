@@ -6,15 +6,7 @@ import './Dashboard';
 const SidebarDashboard = () => {
   return (
     <div>
-      <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
-        <a className="  ml-4 " href="/">
-          home
-        </a>
-        <span>|</span>
-        <Link to="/Dashboard" className="   ">My Victorinox</Link>
-        <span>|</span>
-        <a className=" font-bold text-rose-700 ">My Profile</a>
-      </div>
+      
       <div class="w-[300px] ml-[20px] mt-[30px] bg-white px-1 ">
         <ul class="relative">
           <li class="relative">
@@ -23,14 +15,14 @@ const SidebarDashboard = () => {
             </Link>
           </li>
           <li class="relative ">
-            <a class="text-1xl flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-rose-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+            <Link to="/Dashboard/Editprofile" class="text-1xl flex items-center text-sm py-4 px-6 h-12 overflow-hidden  text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
               Edit Profile
-            </a>
+            </Link>
           </li>
           <li class="relative">
-            <a class="text-1xl flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
+            <Link to="/Dashboard/Myprofile" class="text-1xl flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
               My profile
-            </a>
+            </Link>
           <li class="relative">
             <a class="text-1xl flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">
               My Review
