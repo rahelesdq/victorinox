@@ -8,7 +8,7 @@ const Myprofile = () => {
     return state.form.List;
   });
   return (
-    <div>
+    <div className="flex ">
       <div>
         <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
           <a className="  ml-4 " href="/">
@@ -23,7 +23,7 @@ const Myprofile = () => {
       </div>
       {Formdata.map((item) => {
         return (
-          <div className="flex">
+          <div className="flex mt-24">
             {item.FirstName}
             {item.Surname}
           </div>

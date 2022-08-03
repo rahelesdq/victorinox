@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const dispatch = useDispatch();
   const [Email, SetEmail] = useState();
   const [Pass, SetPass] = useState();
+  const loginbtn = () => {
+    dispatch();
+  };
 
   return (
     <div>

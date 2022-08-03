@@ -5,12 +5,12 @@ export const Profileslice = createSlice({
   initialState: {
     List: [
       {
-        FirstName: "Marzieh",
-        Surname: "Saadati",
-        Nickname: "Mari",
-        Country: "Iran",
-        Language: "English",
-        Birthday: "1995/7/11",
+        FirstName: "",
+        Surname: "",
+        Nickname: "",
+        Country: "",
+        Language: "",
+        Birthday: "]",
       },
     ],
   },
