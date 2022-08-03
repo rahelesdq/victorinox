@@ -16,7 +16,7 @@ import Myproducts from "./Components/Dashboard/Myproducts";
 import Myreviews from "./Components/Dashboard/Myreviews";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import Store from "./Store";
+import Store from "./Components/Redux/Store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Editprofile from "./Components/Dashboard/Editprofile";
 

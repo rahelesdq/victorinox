@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaRegUser } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+  const me = useSelector((state) => state.auth.me);
+
+  useEffect(() => {
+    if (!me) return navigate("/Login");
+    setLoading(false);
+  }, []);
+
+  if (loading) {
+    return <h1>Loading ...</h1>;
+  }
+
   return (
     <div>
       <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">

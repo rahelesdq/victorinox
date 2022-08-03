@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Register } from "../Redux/Userslice";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Myprofile = () => {
+  const navigate = useNavigate();
+  const me = useSelector((state) => state.auth.me);
+  const dispatch = useDispatch();
   const [firstname, SetFirstname] = useState("");
   const [Surname, SetSurname] = useState("");
   const [title, SetTitle] = useState();
@@ -12,10 +18,27 @@ const Myprofile = () => {
   const [Confirmpass, SetConfirmpass] = useState();
   const [email, SetEmail] = useState();
   const [startDate, setStartDate] = useState(new Date());
-  const [submit, SetSubmit] = useState();
   if (Confirmpass === !password) {
     return <div>Password and password confirmation do not match </div>;
   }
+  const change = () => {
+    console.log("change called");
+    dispatch(
+      Register({
+        firstname,
+        email,
+        Surname,
+        country,
+        password,
+        Confirmpass,
+        language,
+        startDate: startDate.toISOString(),
+      })
+    );
+    navigate("/dashboard");
+    // if (me) return navigate("/Watches");
+    // alert("your registration is not correct");
+  };
 
   return (
     <div className="flex">
@@ -191,8 +214,12 @@ const Myprofile = () => {
             </span>
           </div>
         </div>
+
         <div className="flex  text-xl mt-[35px]">
-          <button className=" w-[230px] h-[50px] bg-rose-700 text-white">
+          <button
+            onClick={change}
+            className=" w-[230px] h-[50px] bg-rose-700 text-white"
+          >
             CREATE ACCOUNT
           </button>
         </div>

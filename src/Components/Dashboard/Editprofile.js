@@ -5,11 +5,13 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 import { addForm } from "./Profileslice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Editprofile = () => {
-  const dispatch = useDispatch();
+  const x = useSelector((state) => state);
+  console.log(x);
 
+  const dispatch = useDispatch();
   const [firstname, SetFirstname] = useState("");
   const [Surname, SetSurname] = useState("");
   const [Nickname, SetNickname] = useState("");
@@ -17,17 +19,17 @@ const Editprofile = () => {
   const [country, setCountry] = useState("choose");
   const [language, SetLanguage] = useState();
   const [startDate, setStartDate] = useState(new Date());
-  const [submit, SetSubmit] = useState();
+  const [Form, SetForm] = useState();
 
   const change = () => {
     dispatch(
       addForm({
-        FirstName: "Marzieh",
-        Surname: "Saadati",
-        Nickname: "Mari",
-        Country: "Iran",
-        Language: "English",
-        Birthday: "1995/7/11",
+        firstname,
+        Surname,
+        Nickname,
+        country,
+        language,
+        startDate: startDate.toISOString(),
       })
     );
   };
@@ -84,6 +86,7 @@ const Editprofile = () => {
             class="sm:w-full border-gray-400 border-2 ml-[290px] pl-2 h-[40px]	"
             type="text"
           ></input>
+          {console.log(firstname)}
         </div>
         <div className="flex  text-xl mt-[50px]">
           <span>Surname*</span>
@@ -93,6 +96,7 @@ const Editprofile = () => {
             class="sm:w-full border-gray-400 border-2 ml-[295px] pl-2 h-[40px]	"
             type="text"
           ></input>
+          {console.log(Surname)}
         </div>
         <div className="flex  text-2xl mt-[50px]">
           <span>Nickname*</span>
@@ -102,6 +106,7 @@ const Editprofile = () => {
             class="sm:w-full border-gray-400 border-2 ml-[300px] pl-2 h-[40px]		"
             type="text"
           ></input>
+          {console.log(Nickname)}
         </div>
         <div className="flex  text-2xl mt-[50px]">
           <span>Country/Region*</span>
