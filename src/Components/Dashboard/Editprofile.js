@@ -22,16 +22,23 @@ const Editprofile = () => {
   return (
     <div className=" flex">
       <div className="block">
-      <div className=" flex  h-16  mt-8 ml-8 hidden md:block  xl:space-x-2">
-        <a className="  ml-4 " href="/">
-          home
-        </a>
-        <span>|</span>
-        <Link to="/Dashboard" className="   ">My Victorinox</Link>
-        <span>|</span>
-        <Link to="/Dashboard/Editprofile" className=" font-bold text-rose-700 ">Edit profile</Link>
-      </div>
-      <SidebarDashboard />
+        <div className=" flex  h-16  mt-8 ml-8 hidden md:block  xl:space-x-2">
+          <a className="  ml-4 " href="/">
+            home
+          </a>
+          <span>|</span>
+          <Link to="/Dashboard" className="   ">
+            My Victorinox
+          </Link>
+          <span>|</span>
+          <Link
+            to="/Dashboard/Editprofile"
+            className=" font-bold text-rose-700 "
+          >
+            Edit profile
+          </Link>
+        </div>
+        <SidebarDashboard />
       </div>
       <div className=" mt-[100px]  mb-[300px]  mr-[50px]  ">
         <span className="text-3xl  ">My Account</span>
@@ -148,7 +155,7 @@ const Editprofile = () => {
           <DatePicker
             className="ml-60 border-2"
             selected={startDate}
-            onChange={(date: Date) => setStartDate(date)}
+            onChange={(date) => setStartDate(date)}
           />
           {console.log(startDate, "tabalod")}
         </div>
