@@ -10,10 +10,12 @@ const LoginComp = () => {
   const [Email, SetEmail] = useState();
   const [Pass, SetPass] = useState();
   const loginbtn = () => {
+    if (!Email || !Pass) return alert("FIll the box ");
     dispatch(
       Login({
         Email,
         Pass,
+        cb: navigate,
       })
     );
     navigate("/dashboard");
