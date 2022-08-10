@@ -32,11 +32,10 @@ export const Profileslice = createSlice({
       const index = state.users.findIndex(user);
 
       if (index === -1) return alert("user doesnt exist ");
-      if (!state.users.password && !state.users.email)
-        return alert("FIll the box ");
 
       if (state.users[index].password === action.payload.Pass) {
         state.me = state.users[index];
+        action.payload.cb("/dashboard");
       }
 
       console.log(state.users.findIndex(user));
