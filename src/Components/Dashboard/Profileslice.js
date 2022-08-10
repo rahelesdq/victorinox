@@ -1,26 +1,29 @@
-import { createSlice } from "@reduxjs/toolkit";
+// import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  information: [],
-};
+// const initialState = {
+//   form: [
+//     {
+//       firstname: "Marzieh",
+//       Surname: "Saadati",
+//       Nickname: "Mari",
+//       country: "Iran",
+//       language: "English",
+//       startDate: "1995/7/11",
+//     },
+//   ],
+// };
 
-export const Profileslice = createSlice({
-  name: "list",
-  initialState,
-  reducers: {
-    addItem: (state, action) => {
-      state.list.push(action.payload);
-    },
-    done: (state, action) => {
-      state.list[action.payload].isDone = !state.list[action.payload].isDone;
-    },
-    remove: (state, action) => {
-      state.list.splice(action.payload, 1);
-    },
-  },
-});
+// export const Profileslice = createSlice({
+//   name: "form",
+//   initialState,
+//   reducers: {
+//     addForm: (state, action) => {
+//       state.form.push(action.payload);
+//     },
+//   },
+// });
 
-// Action creators are generated for each case reducer function
-export const { addItem, done, remove } = listSlice.actions;
+// // Action creators are generated for each case reducer function
+// export const { addForm } = Profileslice.actions;
 
-export default Profileslice.reducer;
+// export default Profileslice.reducer;

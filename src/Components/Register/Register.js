@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Register } from "../Redux/Userslice";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Myprofile = () => {
+  const navigate = useNavigate();
+  const me = useSelector((state) => state.auth.me);
+  const dispatch = useDispatch();
   const [firstname, SetFirstname] = useState("");
   const [Surname, SetSurname] = useState("");
   const [title, SetTitle] = useState();
@@ -12,27 +18,44 @@ const Myprofile = () => {
   const [Confirmpass, SetConfirmpass] = useState();
   const [email, SetEmail] = useState();
   const [startDate, setStartDate] = useState(new Date());
-  const [submit, SetSubmit] = useState();
   if (Confirmpass === !password) {
     return <div>Password and password confirmation do not match </div>;
   }
+  const change = () => {
+    console.log("change called");
+    dispatch(
+      Register({
+        firstname,
+        email,
+        Surname,
+        country,
+        password,
+        Confirmpass,
+        language,
+        startDate: startDate.toISOString(),
+      })
+    );
+    navigate("/dashboard");
+    // if (me) return navigate("/Watches");
+    // alert("your registration is not correct");
+  };
 
   return (
     <div className="flex">
       {/* <div className="w-16"></div> */}
       <div className="mt-[100px]  mb-[300px] w-full mx-28">
         <div
-          className="flex  text-xl mt-[100px]"
+          className="lg:flex sm:block block text-xl mt-[100px]"
           onChange={(e) => SetTitle(e.target.value)}
         >
           {console.log(title, "lalala")}
-          <span className="cursor-pointer">title*</span>
+          <span className="cursor-pointer sm:block lg:flex block">title*</span>
           <input
             id="bordered-radio-1"
             type="radio"
             value="Mr"
             name="bordered-radio"
-            class=" w-7 xl:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            class=" w-7 xl:ml-[350px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           ></input>
           <labe>Mr</labe>
           <input
@@ -40,12 +63,14 @@ const Myprofile = () => {
             type="radio"
             value="Ms./Mrs."
             name="bordered-radio"
-            class="   w-7 xl:ml-[450px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            class="   w-7 xl:ml-[450px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           ></input>
           <labe>Ms./Mrs.</labe>
         </div>
-        <div className="flex  text-xl mt-[35px]">
-          <span className="cursor-pointer">FirstName*</span>
+        <div className="lg:flex sm:block block  text-xl mt-[35px]">
+          <span className="cursor-pointer sm:block lg:flex block ">
+            FirstName*
+          </span>
           <input
             value={firstname}
             onChange={(e) => SetFirstname(e.target.value)}
@@ -137,7 +162,7 @@ const Myprofile = () => {
           <DatePicker
             className="ml-[315px] border-2"
             selected={startDate}
-            onChange={(date: Date) => setStartDate(date)}
+            onChange={(date) => setStartDate(date)}
           />
           {console.log(startDate, "tabalod")}
         </div>
@@ -189,8 +214,12 @@ const Myprofile = () => {
             </span>
           </div>
         </div>
+
         <div className="flex  text-xl mt-[35px]">
-          <button className=" w-[230px] h-[50px] bg-rose-700 text-white">
+          <button
+            onClick={change}
+            className=" w-[230px] h-[50px] bg-rose-700 text-white"
+          >
             CREATE ACCOUNT
           </button>
         </div>

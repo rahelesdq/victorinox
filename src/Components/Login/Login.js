@@ -1,7 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { Login } from "../Redux/Userslice";
 
-const Login = () => {
+const LoginComp = () => {
+  console.log("Login called");
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [Email, SetEmail] = useState();
+  const [Pass, SetPass] = useState();
+  const loginbtn = () => {
+    dispatch(
+      Login({
+        Email,
+        Pass,
+      })
+    );
+    navigate("/dashboard");
+    // if (!Email === email && !Pass === password) return <h1>alart</h1>;
+
+    // console.log(email);
+  };
+
   return (
     <div>
       <br />
@@ -22,12 +42,15 @@ const Login = () => {
             E-Mail
           </label>
           <input
-            class="  border  border-black   py-4 px-20 "
+            value={Email}
+            onChange={(e) => SetEmail(e.target.value)}
+            class="  border border-black py-4 px-20 "
             id="Email"
-            type="text"
+            type="email"
             placeholder="Email"
           ></input>
         </div>
+        {/* {console.log(Email)} */}
         <br />
         <div class="text-center">
           <label
@@ -37,6 +60,8 @@ const Login = () => {
             Password
           </label>
           <input
+            value={Pass}
+            onChange={(e) => SetPass(e.target.value)}
             class=" border border-black py-4 px-20 "
             id="password"
             type="password"
@@ -44,7 +69,10 @@ const Login = () => {
           ></input>
         </div>
         <div class="text-center">
-          <button className="xl:mt-7 bg-rose-700 py-4 w-[339px] text-white  shadow">
+          <button
+            onClick={loginbtn}
+            className="xl:mt-7 bg-rose-700 py-4 w-[339px] text-white  shadow"
+          >
             Login
           </button>
         </div>
@@ -69,4 +97,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginComp;
