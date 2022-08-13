@@ -14,6 +14,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import Myprofile from "./Components/Dashboard/Myprofile";
 import Myproducts from "./Components/Dashboard/Myproducts";
 import Myreviews from "./Components/Dashboard/Myreviews";
+import Sportchrono from "./Components/Watches/Sportchrono";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import Store from "./Components/Redux/Store";
@@ -33,6 +34,7 @@ root.render(
             <Route path="Armyknives" element={<Armyknives />} />
             <Route path="Cutlery" element={<Cutlery />} />
             <Route path="Watches" element={<Watches />} />
+            <Route path="Sportchrono" element={<Sportchrono />} />
             <Route path="Travelgear" element={<Travelgear />} />
             <Route path="Fragrances" element={<Fragrances />} />
             <Route path="Dashboard" element={<Dashboard />}></Route>
