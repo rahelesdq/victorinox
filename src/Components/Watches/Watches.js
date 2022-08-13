@@ -16,12 +16,12 @@ class Watches extends Component {
           <span>|</span>
           <a className=" font-bold text-rose-700 ">watches</a>
         </div>
-        <div className="xl:mt-9 xl:ml-28">
-          <h1 className="xl:text-3xl font-bold sm:mt-[150px] ">Victorinox Watches</h1>
+        <div className="xl:mt-9 xl:ml-28 md:mt-[45px] lg:ml-[88px] mt-[45px] ml-[35px]">
+          <h1 className="xl:text-3xl font-bold sm:mt-[150px] lg:text-3xl md:text-3xl ">Victorinox Watches</h1>
         </div>
 
         <div className="victorinox-text  flex 5  ">
-          <div className="  xl:text-left mt-8 xl:ml-32 w-96 ">
+          <div className="  xl:text-left mt-8 xl:ml-32 w-96 lg:ml-10 md:p-10 sm:p-6 xl:p-1 p-[40px] ">
             <span className=" xl:text-lg  ">
               ​​​​​​​125 years ago, Karl Elsener didn’t just invent the Swiss
               Army Knife – he invented an attitude. To this day, this attitude
@@ -30,13 +30,13 @@ class Watches extends Component {
               you to realize that time having fun is never wasted.
             </span>
             <br />
-            <button className="xl:mt-7 bg-rose-700 py-3 px-14 text-white xl:text-xl shadow">
+            <button className="xl:mt-7 bg-rose-700 py-3 px-14 text-white xl:text-xl shadow w-[400px] md:w-[300px]">
               view All Watches
             </button>
           </div>
           <div className=" ">
             <img
-              className=" xl:ml-80  "
+              className=" xl:ml-80 lg:ml-32 md:ml-30"
               src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHJvb3R8MTI4MjY1fGltYWdlL2pwZWd8aGQxL2g3Zi8xMzYxMDU4OTcxNjUxMC92eC0xMjVzYWstY3Jvc3NjYXQtd2F0LTI0MTk1Ny1MXzUyNngzMDAuanBnfDNhNzMxMDEwZGU4NjhhMTYxNmRhZDAyZmIwZGUxOTdhYjYzZTI5ODE2NjhmZmFlZTMwYzZkYWI1MDEwYTYyMGM"
             ></img>
           </div>

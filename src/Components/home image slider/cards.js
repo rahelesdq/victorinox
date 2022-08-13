@@ -1,24 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  Pagination, Scrollbar,A11y } from "swiper";
+import { Pagination, Scrollbar, A11y } from "swiper";
 import React from "react";
-import 'swiper/css'; 
+import "swiper/css";
 import "./cards.css";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-
-
-
-
-export default function Cards () {
-
-
-
+export default function Cards() {
   return (
     <>
-      <Swiper id="swiperrr"
-
+      <Swiper
+        id="swiperrr"
         modules={[Pagination, Scrollbar, A11y]}
         spaceBetween={20}
         slidesPerView={4}
@@ -30,32 +23,29 @@ export default function Cards () {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         className="mySwiper"
-        >
-
-
-        
-        <SwiperSlide >
+      >
+        <SwiperSlide>
           <div className="card1 -300 xl:border-2 ">
             <div className="card-image 	">
               <img
-              alt="img1"
+                alt="img1"
                 className="imageCard  xl:w-72 "
                 src="https://imageengine.victorinox.com/mediahub/129530/420Wx368H/WAT_241919_S1.jpg"
               />
 
-              <div className="hide-info hidden animate-pulse ">
+              <div className="hide-info hidden animate-pulse sm:hidden  ">
                 <button className=" duration-300 w-full bg-rose-700 hover:bg-gray-900 text-white font-bold py-2 px-4 border  ">
                   Add to cart
                 </button>
                 <br />
                 <div className="rangbandi-image flex ">
                   <img
-                  alt="img7"
+                    alt="img7"
                     className="xl:w-16 cursor-pointer"
                     src="https://imageengine.victorinox.com/mediahub/129524/420Wx368H/WAT_241918_S1.jpg"
                   ></img>
                   <img
-                  alt="img2"
+                    alt="img2"
                     className="white-watch  xl:w-16 cursor-pointer"
                     src="https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WAT_241921_S1.jpg"
                   />
@@ -76,7 +66,7 @@ export default function Cards () {
           <div className="card4 -300 xl:border-2	">
             <div className="card-image">
               <img
-              alt="img3"
+                alt="img3"
                 className="imageCard  xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/32966/420Wx368H/SAK_0_6226_T__S1.jpg"
               />
@@ -103,7 +93,7 @@ export default function Cards () {
           <div className="card2 xl:border-2 	">
             <div className="card-image 	">
               <img
-              alt="img4"
+                alt="img4"
                 className="imageCard xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/31254/420Wx368H/CUT_6_7143_5__S1.jpg"
               />
@@ -128,7 +118,7 @@ export default function Cards () {
           <div className="card2 xl:border-2 	">
             <div className="card-image	">
               <img
-              alt="img6"
+                alt="img6"
                 className="imageCard xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/137636/420Wx368H/WAT_241927-1_S1.jpg"
               />
@@ -153,7 +143,7 @@ export default function Cards () {
           <div className="card2 xl:border-2 	">
             <div className="card-image 	">
               <img
-              alt="img4"
+                alt="img4"
                 className="imageCard xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/31254/420Wx368H/CUT_6_7143_5__S1.jpg"
               />
@@ -178,7 +168,7 @@ export default function Cards () {
           <div className="card2 xl:border-2 	">
             <div className="card-image	">
               <img
-              alt="img4"
+                alt="img4"
                 className="imageCard xl:w-72"
                 src="https://imageengine.victorinox.com/mediahub/31254/420Wx368H/CUT_6_7143_5__S1.jpg"
               />
@@ -199,10 +189,7 @@ export default function Cards () {
             </div>
           </div>
         </SwiperSlide>
-     
       </Swiper>
-      </>
-
-
+    </>
   );
-};
+}

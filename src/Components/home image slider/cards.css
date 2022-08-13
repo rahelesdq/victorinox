@@ -1,49 +1,22 @@
-.card-image:hover .hide-info{
-   
-    display: block;
+
+@media  screen and (max-width:1279px) and (min-width: 768px) {
+    .card-image:hover .hide-info{ 
+        display:hidden;   
+       
+    }
     
-   
+}
+@media  screen and (min-width:1280px){
+    .card-image:hover .hide-info{ 
+        display:block;   
+       
+    }
+    
 }
 
-.card-image2:hover .hide-info{
-    display: block;
-
-
-}
-
-.card-image3:hover .hide-info{
-    display: block;
-}
-
-.card-image4:hover .hide-info{
-    display: block;
-}
-
-.card-image5:hover .hide-info{
-    display: block;
-}
-.card-image6:hover .hide-info{
-    display: block;
-}
-.card-image9:hover .hide-info{
-    display: block;
-}
-
-/* .white-watch:hover > .card-image{
-background: url('https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WAT_241921_S1.jpg');
-
-} */
-
-.card-image{
-    /* transition-duration: 100ms; */
-    transition: .2s all;
-}
 
 
 .swiper{
-
-
-
     width: 300px;
     height: 200px;
     flex-direction:row-reverse;
@@ -55,17 +28,12 @@ background: url('https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WA
 .SwiperSlide{
     display: inline;
     /* display: flex; */
-
 }
-
-
 #swiperrr{
-
     width: 100%;
     height: 450px;
 }
 
 .hide-info{
-  
-    
+
 }
