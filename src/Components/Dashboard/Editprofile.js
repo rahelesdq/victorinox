@@ -37,7 +37,7 @@ const Editprofile = () => {
   return (
     <div className=" flex">
       <div className="block">
-        <div className=" flex  h-16  mt-8 ml-8 hidden lg:block  xl:space-x-2">
+        <div className=" h-16  mt-8 ml-8 lg:block  xl:space-x-2">
           <a className="  ml-4 " href="/">
             home
           </a>
@@ -45,7 +45,6 @@ const Editprofile = () => {
           <Link to="/Dashboard" className="   ">
             My Victorinox
           </Link>
-          <Link to="/Dashboard">My Victorinox</Link>
           <span>|</span>
           <Link
             to="/Dashboard/Editprofile"
