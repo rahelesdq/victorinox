@@ -240,13 +240,13 @@ const Toolbar = () => {
                   <AiOutlineRight className=" inline absolute  right-1  text-lg mt-[7px]  ml-[5px] " />
                 </a>
 
-                <a
-                  href="#responsive-header"
+                <Link
+                  to="/Watches"
                   class="block mt-4 lg:inline-block lg:mt-0 lg:text-white hover:text-red-500 ml-6 text-lg "
                 >
                   WATCHES
                   <AiOutlineRight className=" inline absolute  right-1  text-lg mt-[6px]" />
-                </a>
+                </Link>
 
                 <a
                   href="#responsive-header"

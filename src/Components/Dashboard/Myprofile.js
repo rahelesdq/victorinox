@@ -71,7 +71,7 @@ const Myprofile = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 lg:border-l-2 lg:border-gray-300 md:ml-[-110px] ">
+      <div className="mt-24 lg:border-l-2 lg:border-gray-300  ">
         <img
           src="https://www.innovaxn.eu/wp-content/uploads/blank-profile-picture-973460_1280.png"
           className="icone"
