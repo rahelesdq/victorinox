@@ -1,12 +1,19 @@
 import React from "react";
 import SidebarDashboard from "./SidebarDashboard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Myprofile = () => {
-  const Formdata = useSelector((state) => {
-    return state.form.List;
+  const navigate = useNavigate();
+  const myinfo = useSelector((state) => {
+    console.log("lakad matataaaaaaaaaaaaaaaa", state);
+    return state.auth.me;
+    // auth az store Miad , me az slice
   });
+  console.log("**********", myinfo);
+
+  if (!myinfo || !myinfo.email) return navigate("/Login");
+
   return (
     <div className="flex ">
       <div>
@@ -21,14 +28,16 @@ const Myprofile = () => {
         </div>
         <SidebarDashboard />
       </div>
-      {Formdata.map((item) => {
-        return (
-          <div className="flex mt-24">
-            {item.FirstName}
-            {item.Surname}
-          </div>
-        );
-      })}
+      <div className="flex mt-24">
+        {myinfo.firstname}
+        {myinfo.Surname}
+        <br />
+        {myinfo.country}
+        <br />
+        {myinfo.language}
+        <br />
+        {myinfo.startDate}
+      </div>
     </div>
   );
 };
