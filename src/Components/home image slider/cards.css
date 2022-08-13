@@ -1,30 +1,31 @@
 .card-image:hover .hide-info{
-
+   
     display: block;
+    
    
 }
 
-.card-image2:hover .hide-info2{
+.card-image2:hover .hide-info{
     display: block;
 
 
 }
 
-.card-image3:hover .hide-info3{
+.card-image3:hover .hide-info{
     display: block;
 }
 
-.card-image4:hover .hide-info4{
+.card-image4:hover .hide-info{
     display: block;
 }
 
-.card-image5:hover .hide-info5{
+.card-image5:hover .hide-info{
     display: block;
 }
-.card-image6:hover .hide-info6{
+.card-image6:hover .hide-info{
     display: block;
 }
-.card-image9:hover .hide-info9{
+.card-image9:hover .hide-info{
     display: block;
 }
 
@@ -33,7 +34,10 @@ background: url('https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WA
 
 } */
 
-
+.card-image{
+    /* transition-duration: 100ms; */
+    transition: .2s all;
+}
 
 
 .swiper{
@@ -58,5 +62,10 @@ background: url('https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WA
 #swiperrr{
 
     width: 100%;
-    height: 390px;
+    height: 450px;
+}
+
+.hide-info{
+  
+    
 }
