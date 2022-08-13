@@ -6,13 +6,15 @@ const Header = () => {
   return (
     <div>
       <div className="sm:flex justify-between items-center mx-12 h-14 block">
-        <div>
-          <img
-            className=" mt-[55px] ml-[10px] "
-            src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
-          />
+        <div className="flex  content-center">
+          <Link to="/">
+            <img
+              className=" sm:mt-[60px] mt-[10px]"
+              src="https://assets.victorinox.com/_ui/static/media/victorinox-logo.svg?"
+            />
+          </Link>
         </div>
-        <div class="flex bg-rose-700 mr-[10px] mt-[55px]">
+        <div class="lg:flex small:hidden hidden bg-rose-700 mr-[10px] mt-[55px]">
           <input
             className="h-[40px] px-2 bg-gray-300 py-2 w-80  "
             type="text"

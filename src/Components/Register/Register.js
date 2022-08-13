@@ -36,13 +36,10 @@ const Myprofile = () => {
       })
     );
     navigate("/dashboard");
-    // if (me) return navigate("/Watches");
-    // alert("your registration is not correct");
   };
 
   return (
     <div className="flex">
-      {/* <div className="w-16"></div> */}
       <div className="mt-[100px]  mb-[300px] w-full mx-28">
         <div
           className="lg:flex sm:block block text-xl mt-[100px]"
@@ -50,76 +47,78 @@ const Myprofile = () => {
         >
           {console.log(title, "lalala")}
           <span className="cursor-pointer sm:block lg:flex block">title*</span>
-          <input
-            id="bordered-radio-1"
-            type="radio"
-            value="Mr"
-            name="bordered-radio"
-            class=" w-7 xl:ml-[350px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-          ></input>
-          <labe>Mr</labe>
-          <input
-            id="bordered-radio-1"
-            type="radio"
-            value="Ms./Mrs."
-            name="bordered-radio"
-            class="   w-7 xl:ml-[450px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-          ></input>
-          <labe>Ms./Mrs.</labe>
+          <div className="pt-7 lg:pt-[0px]">
+            <input
+              id="bordered-radio-1"
+              type="radio"
+              value="Mr"
+              name="bordered-radio"
+              class=" w-7 xl:ml-[350px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+            <labe>Mr</labe>
+            <input
+              id="bordered-radio-1"
+              type="radio"
+              value="Ms./Mrs."
+              name="bordered-radio"
+              class="   w-7 xl:ml-[450px] lg:ml-[350px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+            <labe>Ms./Mrs.</labe>
+          </div>
         </div>
-        <div className="lg:flex sm:block block  text-xl mt-[35px]">
-          <span className="cursor-pointer sm:block lg:flex block ">
-            FirstName*
-          </span>
+        <div className=" text-xl mt-[35px] lg:flex sm:block block">
+          <span className="cursor-pointer ">FirstName*</span>
           <input
             value={firstname}
             onChange={(e) => SetFirstname(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[286px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 lg:ml-[286px] pl-2 h-[40px]"
             type="text"
           ></input>
         </div>
-        <div className="flex  text-xl mt-[35px]">
+        <div className="flex text-xl mt-[35px] lg:flex sm:block block">
           <span className="cursor-pointer">Surname*</span>
           <input
             value={Surname}
             onChange={(e) => SetSurname(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[295px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 lg:ml-[295px] pl-2 h-[40px]	"
             type="text"
           ></input>
         </div>
 
-        <div className="flex  text-xl mt-[35px]">
+        <div className="text-xl mt-[35px] lg:flex sm:block block">
           <span className="cursor-pointer">Country/Region*</span>
-          <select
-            id="country"
-            name="country"
-            autocomplete="country"
-            class="ml-[247px]  w-[253px]  px-3  bg-white border-b-2 border-black  shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            value={country}
-            onChange={(e) => setCountry(e.target.value)}
-          >
-            <option value="choose">choose country</option>
-            <option value="iran">Iran</option>
-            <option value="United States">United States</option>
-            <option value="Canda">Canada</option>
-            <option value="mexico">Mexico</option>
-          </select>
+          <div className="lg:ml-[247px]  w-[253px] ">
+            <select
+              id="country"
+              name="country"
+              autocomplete="country"
+              class=" px-3  bg-white border-b-2 border-black  shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-sm"
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+            >
+              <option value="choose">choose country</option>
+              <option value="iran">Iran</option>
+              <option value="United States">United States</option>
+              <option value="Canda">Canada</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
           {console.log(country)}
         </div>
         {console.log(language, "*")}
 
         <div
-          className="flex  text-xl mt-[35px]"
+          className="lg:flex sm:block block  text-xl mt-[35px]"
           onChange={(e) => SetLanguage(e.target.value)}
         >
           <span className="cursor-pointer">Language*</span>
-          <div className="ml-24">
+          <div className="lg:ml-24 sm:block lg:flex block sm:mt-3 lg:[0px] ">
             <input
               id="bordered-radio-1"
               type="radio"
               value="english"
               name="bordered-radio"
-              class="w-7 ml-[200px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              class="w-7 lg:ml-[200px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
             ></input>
             <labe>English</labe>
             <input
@@ -127,7 +126,7 @@ const Myprofile = () => {
               type="radio"
               value="french"
               name="bordered-radio"
-              class="w-7 ml-[20px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              class="w-7 lg:ml-[20px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
             ></input>
             <labe>French</labe>
             <input
@@ -135,7 +134,7 @@ const Myprofile = () => {
               type="radio"
               value="italian"
               name="bordered-radio"
-              class="w-7 ml-[40px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              class="w-7 lg:ml-[40px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
             ></input>
             <labe>Italian</labe>
             <input
@@ -143,44 +142,44 @@ const Myprofile = () => {
               type="radio"
               value="spanish"
               name="bordered-radio"
-              class="w-7 ml-[20px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              class="w-7 lg:ml-[20px] text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
             ></input>
             <labe>Spanish</labe>
           </div>
         </div>
-        <div className="flex  text-xl mt-[35px]">
+        <div className="text-xl mt-[35px] sm:block lg:flex block">
           <span className="cursor-pointer">Email*</span>
           <input
             value={email}
             onChange={(e) => SetEmail(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[325px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 lg:ml-[325px] pl-2 h-[40px]	"
             type="Email"
           ></input>
         </div>
-        <div className="flex  text-xl mt-[35px]">
+        <div className=" text-xl mt-[35px] sm:block lg:flex block">
           <span className="cursor-pointer">Birthday</span>
           <DatePicker
-            className="ml-[315px] border-2"
+            className="lg:ml-[315px] border-2"
             selected={startDate}
             onChange={(date) => setStartDate(date)}
           />
           {console.log(startDate, "tabalod")}
         </div>
-        <div className="flex  text-xl mt-[35px]">
+        <div className="text-xl mt-[35px] sm:block lg:flex block">
           <span className="cursor-pointer w-[280px]">Desired password*</span>
           <input
             value={password}
             onChange={(e) => SetPassword(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[185px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 lg:ml-[185px] pl-2 h-[40px]	"
             type="password"
           ></input>
         </div>
-        <div className="flex  text-xl mt-[35px]">
+        <div className="sm:block lg:flex block text-xl mt-[35px]">
           <span className="cursor-pointer w-[280px]">Confirm password*</span>
           <input
             value={Confirmpass}
             onChange={(e) => SetConfirmpass(e.target.value)}
-            class="sm:w-full border-gray-400 border-2 ml-[185px] pl-2 h-[40px]	"
+            class="sm:w-full border-gray-400 border-2 lg:ml-[185px] pl-2 h-[40px]	"
             type="password"
           ></input>
         </div>

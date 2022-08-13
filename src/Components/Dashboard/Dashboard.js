@@ -28,9 +28,9 @@ const Dashboard = () => {
         <span>|</span>
         <a className=" font-bold  text-sm text-rose-700 ">My Victorinox</a>
       </div>
-      <div className="lg:mt-10 sm:mt-18 w-4/5  items-center  justify-between lg:ml-[230px]  text-gray-600 sm:block lg:flex ">
+      <div className="lg:mt-10 sm:mt-18 ml-[80px] mt-[50px] w-4/5  justify-between lg:ml-[230px]  text-gray-600 sm:block lg:flex ">
         <div className=" content-center">
-          <FaRegUser className="lg:text-8xl sm:text-6xl font-thin lg:ml-[100px] sm:ml-[50px]" />
+          <FaRegUser className="lg:text-8xl  text-4xl font-thin lg:ml-[100px]" />
           <Link to="Myprofile">
             <button className="border-2  border-gray-700 border-solid mt-8 w-72 h-10 ">
               MY PROFILE
@@ -38,7 +38,7 @@ const Dashboard = () => {
           </Link>
         </div>
         <div>
-          <FaShoppingCart className="lg:text-8xl sm:text-6xl font-thin lg:ml-[90px]" />
+          <FaShoppingCart className="lg:text-8xl text-4xl font-thin lg:ml-[90px]" />
           <Link to="Myproducts">
             <button className="border-2 border-gray-700 border-solid mt-8 w-72 h-10 ">
               MY PRODUCTS
@@ -46,7 +46,7 @@ const Dashboard = () => {
           </Link>
         </div>
         <div className="lg:text-center lg:mr-40 ">
-          <FaRegStar className="lg:text-8xl sm:text-6xl font-thin lg:ml-[90px] " />
+          <FaRegStar className="lg:text-8xl text-4xl font-thin lg:ml-[90px] " />
           <Link to="Myreviews">
             <button className="border-2 border-gray-700 border-solid mt-8 w-72 h-10 ">
               MY REVIEWS
