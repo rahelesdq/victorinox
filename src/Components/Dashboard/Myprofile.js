@@ -22,6 +22,9 @@ const Myprofile = () => {
             home
           </a>
           <span>|</span>
+          <Link to="/Dashboard" className="   ">
+            My Victorinox
+          </Link>
           <Link to="/Dashboard">My Victorinox</Link>
           <span>|</span>
           <a className=" font-bold text-rose-700 ">My profile</a>

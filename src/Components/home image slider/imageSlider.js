@@ -7,7 +7,7 @@ class ImageSlider extends Component {
     
     return (
       <div>
-        <p className="text-center xl:text-4xl font-semibold xl:m-12 xl:p-5 md:text-5xl">
+        <p className="text-center xl:text-4xl font-semibold xl:m-12 xl:p-5 md:text-5xl ">
           Our Best Sellers
         </p>
         <Cards />

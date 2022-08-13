@@ -42,6 +42,9 @@ const Editprofile = () => {
             home
           </a>
           <span>|</span>
+          <Link to="/Dashboard" className="   ">
+            My Victorinox
+          </Link>
           <Link to="/Dashboard">My Victorinox</Link>
           <span>|</span>
           <Link
