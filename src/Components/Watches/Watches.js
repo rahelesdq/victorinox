@@ -1,114 +1,171 @@
 import React, { Component } from "react";
-import girl from "../../image/download.3.jpg";
-import nife from "../../image/download.webp";
-import goje from "../../image/download.3.webp";
-import watch from "../../image/download.watch.webp";
-import victorinox from "../../image/download.web1.webp";
+import { Link, useNavigate } from "react-router-dom";
+import "../Homepage/Secondgrid.css";
 
-class Watches extends Component {
-  render() {
-    return (
-      <div className="" >
-        <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
-          <a className="  ml-4 " href="/">
-            home
-          </a>
-          <span>|</span>
-          <a className=" font-bold text-rose-700 ">watches</a>
-        </div>
-        <div className="xl:mt-9 xl:ml-28 md:mt-[45px] lg:ml-[88px] mt-[45px] ml-[35px]">
-          <h1 className="xl:text-3xl font-bold sm:mt-[150px] lg:text-3xl md:text-3xl ">Victorinox Watches</h1>
-        </div>
+const Watches = () => {
+  const navigate = useNavigate();
+  return (
+    <div className="">
+      <div className="flex mt-8 ml-8 hidden md:block  xl:space-x-2">
+        <a className="  ml-4 " href="/">
+          home
+        </a>
+        <span>|</span>
+        <a className=" font-bold text-rose-700 ">watches</a>
+      </div>
+      <div className="xl:mt-9 xl:ml-28 ml-[50px] text-3xl">
+        <h1 className="xl:text-3xl font-bold  lg:text-3xl md:text-3xl xl:ml-[55px] lg:ml-[84px] lg:mt-[70px] md:mt-[60px] md:ml-[230px] sm:ml-[185px] sm:mt-[55px] sm:text-3xl mt-[70px] ">
+          Victorinox Watches
+        </h1>
+      </div>
 
-        <div className="victorinox-text  flex 5  ">
-          <div className="  xl:text-left mt-8 xl:ml-32 w-96 lg:ml-10 md:p-10 sm:p-6 xl:p-1 p-[40px] ">
-            <span className=" xl:text-lg  ">
-              ​​​​​​​125 years ago, Karl Elsener didn’t just invent the Swiss
-              Army Knife – he invented an attitude. To this day, this attitude
-              inspires every single one of our products – including our watches.
-              Our timepieces are made right here in Switzerland and will inspire
-              you to realize that time having fun is never wasted.
-            </span>
-            <br />
-            <button className="xl:mt-7 bg-rose-700 py-3 px-14 text-white xl:text-xl shadow w-[400px] md:w-[300px]">
-              view All Watches
-            </button>
-          </div>
-          <div className=" ">
-            <img
-              className=" xl:ml-80 lg:ml-32 md:ml-30"
-              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHJvb3R8MTI4MjY1fGltYWdlL2pwZWd8aGQxL2g3Zi8xMzYxMDU4OTcxNjUxMC92eC0xMjVzYWstY3Jvc3NjYXQtd2F0LTI0MTk1Ny1MXzUyNngzMDAuanBnfDNhNzMxMDEwZGU4NjhhMTYxNmRhZDAyZmIwZGUxOTdhYjYzZTI5ODE2NjhmZmFlZTMwYzZkYWI1MDEwYTYyMGM"
-            ></img>
-          </div>
-        </div>
-        <div className="xl:mt-28 text-center ">
-          <span className="   xl:text-4xl">
-            Which type of watch would you like to explore?
+      <div className="victorinox-text  flex 5 relative md:ml-[47px] ">
+        <div className="  xl:text-left mt-8 xl:ml-32 w-96 lg:ml-[45px] sm:ml-[195px] ml-[49px]">
+          <span className=" xl:text-lg  ">
+            ​​​​​​​125 years ago, Karl Elsener didn’t just invent the Swiss Army
+            Knife – he invented an attitude. To this day, this attitude inspires
+            every single one of our products – including our watches. Our
+            timepieces are made right here in Switzerland and will inspire you
+            to realize that time having fun is never wasted.
           </span>
+          <br />
+          <button
+            onClick={() => {
+              navigate("/Sportchrono");
+            }}
+            className=" mt-[40px] xl:mt-7 bg-rose-700 py-3 px-14 text-white xl:text-xl shadow w-[400px] md:w-[400px] lg:ml-[25px] lg:mt-[40px] md:mt-[40px]"
+          >
+            view All Watches
+          </button>
         </div>
+        <div className=" xl:mt-[-60px] xl:ml-[90px] lg:mt-[-90px] lg:ml-[50px]  md:mt-[250px] sm:mt-[250px] sm:ml-[-495px] sm:p-[45px] mt-[260px] ml-[-420px] p-[30px]">
+          <img 
+            className="   md:ml-30 "
+            src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHJvb3R8MTI4MjY1fGltYWdlL2pwZWd8aGQxL2g3Zi8xMzYxMDU4OTcxNjUxMC92eC0xMjVzYWstY3Jvc3NjYXQtd2F0LTI0MTk1Ny1MXzUyNngzMDAuanBnfDNhNzMxMDEwZGU4NjhhMTYxNmRhZDAyZmIwZGUxOTdhYjYzZTI5ODE2NjhmZmFlZTMwYzZkYWI1MDEwYTYyMGM"
+          ></img>
+        </div>
+      </div>
 
-        <div>
-      <div className=" md:px-[130px]  md:grid  grid-cols-3 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px]  ">
-        <div className="app w-full h-fit col-span-full relative md:shrink-0 imgbox cursor-auto">
+      <div className="xl:mt-28 text-center lg:mt-[50px] md:mt-[50px] text-4xl ">
+        <span className="   xl:text-4xl ">
+          Which type of watch would you like to explore?
+        </span>
+      </div>
+      <div className=" md:px-[10px] lg:px-[130px] md:grid  lg:grid-cols-3 sm:grid-cols-2 gap-3 lg:mt-[58px] sm:mt-[110px] mt-[140px]  ">
+        <div className=" lg:col-span-2 sm:col-span-1">
+          <div className="w-full h-full relative  "> 
+            <img
+              className="w-full h-full"
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwzNDM3NHxpbWFnZS9qcGVnfHRpbS9oYjQvaDI4Lzg4NjMyNTMzOTc1MzQuanBnfGFiYWRhOGY0MjVhYWNiODdlZDk1NzhjMTUyNDllMzMxMTNhNTZhOTFiNmI0YTVmMDYwNTI4M2E5M2QwNzYyYjE"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52  h-12 absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Men's Watches
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="relative h-full imgbox ">
           <img
-            className="img-container   md:w-full md:h-full   "
-            src={victorinox}
+            className="w-full h-full"
+            src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXw0MTM4OXxpbWFnZS9qcGVnfHRpbS9oM2YvaDY2Lzg4NjMyNTc5NTIyODYuanBnfDZhYjQ0MjMxOGFlZTNiZmVkMzA0Y2ViZDhmMGQ0MTg3MGNhN2YwNjljNDM1YzdhZGEyMmE3NjMwOGZiMTAwMTk"
             alt=""
           />
-          <h1 className=" absolute md:bottom-7 m-5  text-white uppercase    ">
-            BEST OF VICTORINOX AND ADIDAS
-          </h1>
-          <p className=" absolute bottom-0   text-white  font-bold  m-5 text-lg">
-            BE EQUIPPED
-          </p>
-        </div>
-        <div className=" col-span-2 ">
-          <div className="w-full relative imgbox">
-            <img className="w-full  " src={girl} alt="" />
-            <h1 className="absolute bottom-[0px]   text-white uppercase   bg-rose-700 w-full h-[112px] bg-opacity-75  "></h1>
-            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
-              PART OF YOUR JOURNEY
-            </p>
-          </div>
-          <div className="w-full mt-[10px] relative imgbox">
-            <img className="w-full" src={goje} alt="" />
-
-            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
-            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
-              PART OF YOUR JOURNEY
-            </p>
+          <div className="flex justify-center">
+            <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+              Mechanical Watches
+            </button>
           </div>
         </div>
-        <div className="col-span-1">
-          <div className="w-full relative imgbox">
-            <img className="w-full  " src={nife} alt="" />
-            <h1 className="absolute bottom-0  text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
-            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
-              PART OF YOUR JOURNEY
-            </p>
-          </div>
 
-          <div className="w-full relative mt-[10px] imgbox">
-            <img className="w-full " src={watch} alt="" />
-            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
-            <p className=" absolute bottom-0 text-white  font-bold  m-5 text-lg">
-              PART OF YOUR JOURNEY
-            </p>
+        <div className="col-span-1 ">
+          <div className="w-full h-full relative imgbox">
+            <img
+              className="w-full h-full"
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwyNDIyN3xpbWFnZS9qcGVnfHRpbS9oYTUvaGRlLzg4NjExOTEwMTIzODIuanBnfDM1ZTVkMjVjNjU1NmE2ZTJiMDA0MzYxYzcwZWI5YzU1NDcwMjQxZDZhYTg0ZWZiZTRiZjQzZDNjMjQyZDg3OGY"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Pilot Watches
+              </button>
+            </div>
           </div>
-
-          <div className="w-full relative  mt-[10px] imgbox">
-            <img className="w-full " src={watch} alt="" />
-            <h1 className="absolute bottom-0   text-white  bg-rose-700 w-full h-[112px] bg-opacity-75 "></h1>
-            <p className=" absolute bottom-0  text-white  font-bold  m-5 text-lg">
-              PART OF YOUR JOURNEY
-            </p>
+        </div>
+        <div className="lg:col-span-2 sm:col-span-1">
+          <div className="w-full h-full relative imgbox">
+            <img
+              className="w-full h-full"
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwzNTE4M3xpbWFnZS9qcGVnfHRpbS9oNmIvaDczLzg4NjMyNTU3MjQwNjIuanBnfGVlMDE4YWQ0NjE1M2U0NGI5MGZmYmE1NTQ0NjliYzAxYmQzYjEzMmU2ZGM2MDAwZDVjOWI4ZjdmYzQzNWRlMmM"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Diving Watches
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="lg:col-span-2 sm:hidden lg:block">
+          <div className="w-full relative  mt-[5px] imgbox">
+            <img
+              className="w-full "
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwzNTIwM3xpbWFnZS9qcGVnfHRpbS9oMGUvaDhjLzg4NjMyNTY4MzgxNzQuanBnfGE2NjFhMWY4ODdlODAwNjI1NzA1OWE0NDFhNGU0M2YyNzg1NDJhMjU4YTIwZDAzYjJhOTBiNjU4YjA1OGI2M2Q"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Chronographs
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-1 ">
+          <div className="w-full h-full relative imgbox">
+            <img
+              className="w-full h-full"
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwyNDUyNHxpbWFnZS9qcGVnfHRpbS9oZDgvaDcxLzg4NjExOTAyMjU5NTAuanBnfDRiZjBkOGJiZDAxZThlYjQ2NDlkOTdmN2Y0OTc4MDNiMmI2YTZlNDFlYWI2ZTI5ZDBkZTI4MTYzYmEzMDU2MTY"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Business Watches
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-1 ">
+          <div className="w-full h-full relative imgbox">
+            <img
+              className="w-full h-full"
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwyNjczNnxpbWFnZS9qcGVnfHRpbS9oNmEvaDEwLzkzMTc2ODM0NjIxNzQuanBnfDNiYmZkYzk1MDc3OGRkNWFkYWJhYmYyZmU4OTdjNTQ1ZmMxZmJjZDA4N2NkOTgxNTEwNGJiNThjOWNjYjEwNmU"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Women's watches
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="lg:col-span-2 sm:hidden lg:block">
+          <div className="w-full relative  mt-[5px] imgbox">
+            <img
+              className="w-full "
+              src="https://imageengine.victorinox.com/medias/?context=bWFzdGVyfHRpbXwzNDgwMnxpbWFnZS9qcGVnfHRpbS9oYmQvaDA0Lzg4NjIzMzg2MTMyNzguanBnfGQxMWExOWQ1ZDFkYjQyY2NjMzk4MzgzMmY2ZTE2ZjVlOTgxMmE5NTU2MmRiOWU3NGFmYjFkYTk2NGI0OGM5ODY"
+              alt=""
+            />
+            <div className="flex justify-center">
+              <button className=" bg-rose-700 w-52 h-12  absolute md:bottom-7 m-5  text-white uppercase absolute  ">
+                Accessories
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-      </div>
-    );
-  }
-}
+  );
+};
 
 export default Watches;

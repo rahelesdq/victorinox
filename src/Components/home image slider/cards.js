@@ -3,13 +3,14 @@ import { Pagination, Scrollbar, A11y } from "swiper";
 import React from "react";
 import "swiper/css";
 import "./cards.css";
-// import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default function Cards() {
+const Cards = () => {
   return (
     <>
+     
+
       <Swiper
         id="swiperrr"
         modules={[Pagination, Scrollbar, A11y]}
@@ -24,10 +25,10 @@ export default function Cards() {
         onSwiper={(swiper) => console.log(swiper)}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide>          
           <div className="card1 -300 xl:border-2 ">
             <div className="card-image 	">
-              <img
+              <img 
                 alt="img1"
                 className="imageCard  xl:w-72 "
                 src="https://imageengine.victorinox.com/mediahub/129530/420Wx368H/WAT_241919_S1.jpg"
@@ -38,6 +39,7 @@ export default function Cards() {
                   Add to cart
                 </button>
                 <br />
+                  {/* rangbandi */}
                 <div className="rangbandi-image flex ">
                   <img
                     alt="img7"
@@ -50,7 +52,6 @@ export default function Cards() {
                     src="https://imageengine.victorinox.com/mediahub/129542/420Wx368H/WAT_241921_S1.jpg"
                   />
                 </div>
-                {/* rangbandi */}
               </div>
             </div>
             <div className="info1 	">
@@ -187,9 +188,13 @@ export default function Cards() {
               <br />
               <span>red</span>
             </div>
+          
           </div>
+          
         </SwiperSlide>
       </Swiper>
+        
     </>
   );
-}
+};
+export default Cards;

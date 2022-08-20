@@ -20,6 +20,7 @@ import { Provider } from "react-redux";
 import Store from "./Components/Redux/Store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Editprofile from "./Components/Dashboard/Editprofile";
+import Florawatch from "./Components/Watches/florawatch";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -37,7 +38,12 @@ root.render(
             <Route path="Sportchrono" element={<Sportchrono />} />
             <Route path="Travelgear" element={<Travelgear />} />
             <Route path="Fragrances" element={<Fragrances />} />
-            <Route path="Dashboard" element={<Dashboard />}></Route>
+            <Route path="florawatch" element={<Florawatch />} />
+
+            <Route path="Dashboard" element={<Dashboard />}>
+            
+
+            </Route>
 
             <Route path="/Dashboard/Myprofile" element={<Myprofile />} />
             <Route path="/Dashboard/Editprofile" element={<Editprofile />} />
