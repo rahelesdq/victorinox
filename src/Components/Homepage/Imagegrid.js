@@ -1,5 +1,5 @@
 import React from "react";
-import './Imagegrid.css';
+import "./imagegrid.css";
 import victorinox from "../../image/download.web1.webp";
 import girl from "../../image/download.3.jpg";
 import nife from "../../image/download.webp";
